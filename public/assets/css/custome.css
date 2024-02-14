@@ -1,0 +1,11 @@
+.demo-btn {
+    border: 1px #1b75bb solid;
+    color: #1b75bb;
+    transition: background-color 0.3s ease;
+}
+  
+.demo-btn:hover {
+background-color: #1b75bb;
+color: #ffffff; /* Change the text color on hover if needed */
+}
+  

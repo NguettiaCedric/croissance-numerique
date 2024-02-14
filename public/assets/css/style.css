@@ -108,7 +108,8 @@ h6,
 }
 
 #topbar .social-links a {
-  color: #5c768d;
+  /* color: #5c768d; */
+  color: #1b75bb;
   padding: 4px 12px;
   display: inline-block;
   line-height: 1px;
@@ -116,7 +117,8 @@ h6,
 }
 
 #topbar .social-links a:hover {
-  color: #428bca;
+  /* color: #428bca; */
+  color: #ffdd15;
 }
 
 /*--------------------------------------------------------------
@@ -846,7 +848,8 @@ section {
   font-size: 42px;
   display: block;
   font-weight: 700;
-  color: #1c5c93;
+  color: #ffdd15;
+  /* color: #1c5c93; */
 }
 
 .counts .count-box p {
