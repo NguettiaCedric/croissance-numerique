@@ -10,8 +10,9 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{asset("assets/logo/logo.png")}}" style="width: 270; height:270"rel="icon">
-  {{-- <link href="{{asset("assets/img/logo.png")}}" rel="icon"> --}}
+  {{-- <link href="{{asset("assets/logo/logo.png")}}" style="width: 270; height:270"rel="icon"> --}}
+  {{-- <link href="{{asset("assets/logo/favicon.png")}}" style="width: 270; height:270"rel="icon"> --}}
+  <link href="{{asset("assets/img/fav.png")}}" rel="icon">
   <link href="{{asset("assets/img/apple-touch-icon.png")}}" rel="apple-touch-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
