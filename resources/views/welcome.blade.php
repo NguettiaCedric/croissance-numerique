@@ -481,87 +481,107 @@
 
     {{-- --=== testimonials == --}}
 
-     <section id="testimonials" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Témoignages</h2>
-      <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card">
-              <div class="card-body">
-                <p class="card-text">"Le service était exceptionnel. Les employés étaient amicaux et compétents."</p>
-                <h5 class="card-title">John Doe</h5>
-                <p class="card-subtitle">Client satisfait</p>
+    <section id="testimonials" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Témoignages</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">"Le service était exceptionnel. Les employés étaient amicaux et compétents."</p>
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-subtitle">Client satisfait</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <div class="card-body">
-                <p class="card-text">"J'ai été impressionné par la qualité des produits. Hautement recommandé."</p>
-                <h5 class="card-title">Jane Doe</h5>
-                <p class="card-subtitle">Client fidèle</p>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">"J'ai été impressionné par la qualité des produits. Hautement recommandé."</p>
+                  <h5 class="card-title">Jane Doe</h5>
+                  <p class="card-subtitle">Client fidèle</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="carousel-item">
-            <div class="card">
-              <div class="card-body">
-                <p class="card-text">"J'ai été impressionné par la qualité des produits. Hautement recommandé."</p>
-                <h5 class="card-title">Jane Doe</h5>
-                <p class="card-subtitle">Client fidèle</p>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">"J'ai été impressionné par la qualité des produits. Hautement recommandé."</p>
+                  <h5 class="card-title">Jane Doe</h5>
+                  <p class="card-subtitle">Client fidèle</p>
+                </div>
               </div>
             </div>
+            <!-- Ajoutez plus d'éléments carousel-items au besoin -->
           </div>
-          <!-- Ajoutez plus d'éléments carousel-items au besoin -->
+          <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Précédent</span>
+          </a>
+          <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Suivant</span>
+          </a>
         </div>
-        <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Précédent</span>
-        </a>
-        <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Suivant</span>
-        </a>
       </div>
-    </div>
-  </section>
+    </section>
     {{-- --== testimonials === --}}
 
 
-      <!-- Start location -->
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="pt-4">
+      {{-- test --}}
+
+      
+      {{-- test --}}
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+          <div class="row">
+
+            <div class="col">
+              <div class="col-lg d-flex aos-init aos-animate" data-aos="fade-up">
             <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h5>Notre Adresse</h5>
-            <p>A108 Adam Street, New York, NY 535022</p>
+              <i class="bx bx-map"></i>
+              <h4>Notre adresse</h4>
+              <p>Attoban</p>
+            </div>
           </div>
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h5>Email</h5>
-            <p>A108 Adam Street, New York, NY 535022</p>
+
+          <div class="col-lg d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box">
+              <i class="bx bx-envelope"></i>
+              <h4>Email</h4>
+              <p>
+                contact@croissancenumerique.ci
+                {{-- <br>contact@example.com --}}
+              </p>
+            </div>
           </div>
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h5>Contact</h5>
-            <p>A108 Adam Street, New York, NY 535022</p>
-          </div>
-        </div>
+
+          <div class="col-lg d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-box ">
+              <i class="bx bx-phone-call"></i>
+              <h4>Contactez-nous</h4>
+              <p>+225 07 07 540 555
+                {{-- <br>+1 6678 254445 41 --}}
+              </p>
+            </div>
+          </div></div>
+            <div class="col">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d993.0707894117758!2d-3.984357699185542!3d5.373721538027353!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1edd6ea31e79f%3A0x1cb6dff0d3e1919f!2sCroissance%20Numerique!5e0!3m2!1sfr!2sci!4v1707911881538!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
           
+
         </div>
 
-        <div class="col">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d993.0707894117758!2d-3.984357699185542!3d5.373721538027353!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1edd6ea31e79f%3A0x1cb6dff0d3e1919f!2sCroissance%20Numerique!5e0!3m2!1sfr!2sci!4v1707911881538!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        
       </div>
-    </div>
-      <!-- End location -->
-
+    </section>
+    <!-- End contact -->
 
   </main>
   <!-- End #main -->

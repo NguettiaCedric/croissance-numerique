@@ -5,7 +5,10 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>Mamba</h3>
+            {{-- <h3>Mamba</h3> --}}
+            <img style="
+            height: 42px;
+        " src="assets/logo/logo.png" alt="logo">
             <p>
               A108 Adam Street <br>
               NY 535022, USA<br><br>
@@ -58,14 +61,10 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Mamba</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Croissance Numerique</span></strong>. Tous droits Reservé
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
+      {{-- <div class="credits">
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+      </div> --}}
     </div>
 </footer><!-- End Footer -->
