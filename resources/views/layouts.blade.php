@@ -15,6 +15,7 @@
   <link class="rounded-circle" href="{{asset("assets/img/fav.png")}}" rel="icon">
   <link href="{{asset("assets/img/apple-touch-icon.png")}}" rel="apple-touch-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
@@ -38,14 +39,7 @@
   <!-- Template Main CSS File -->
   <link href="{{asset("assets/css/style.css")}}" rel="stylesheet">
   <link href="{{asset("assets/css/custome.css")}}" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Mamba
-  * Updated: Jan 29 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  
 </head>
 
 <body>
