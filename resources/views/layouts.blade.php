@@ -33,6 +33,8 @@
 
   <link href="{{asset("assets/vendor/swiper/swiper-bundle.min.css")}}" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+
+  
   
 
   <!-- Template Main CSS File -->

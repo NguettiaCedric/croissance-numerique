@@ -118,13 +118,13 @@
 
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-chat-left-dots"></i></div>
+            <div class="icon"><i class="bi bi-cpu"></i></div>
             <h4 class="title"><a href="">Integration de solution</a></h4>
             <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident </p>
             <button type="button" class="btn" style="background: #ffdd15">En savoir plus</button>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-bounding-box"></i></div>
+            <div class="icon"><i class="bi bi-cloud-minus-fill"></i></div>
             <h4 class="title"><a href="">Accompagnement Digital</a></h4>
             <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
             <button type="button" class="btn" style="background: #ffdd15">En savoir plus</button>
@@ -428,7 +428,7 @@
 
 
       <!-- ======= Our Team Section ======= -->
-    <section id="team" class="team pt-4">
+    {{-- <section id="team" class="team pt-4">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Témoignages</h2>
@@ -438,12 +438,12 @@
         </div>
 
       </div>
-    </section>
+    </section> --}}
     <!-- End Our Team Section -->
 
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+    <!-- ======= testimonials ======= -->
+   {{--  <section id="portfolio-details" class="portfolio-details">
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
@@ -472,34 +472,39 @@
         </div>
 
       </div>
-    </section>
-    <!-- End Portfolio Details Section -->
-
-
-
+    </section> --}}
+    <!-- End testimonials  -->
 
 
     {{-- --=== testimonials == --}}
 
-    <section id="testimonials" class="py-5">
+  {{--  <section id="testimonials" class="py-5">
       <div class="container">
         <h2 class="text-center mb-4">Témoignages</h2>
         <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
+
+
+
             <div class="carousel-item active">
-              <div class="card">
+              <div class="card col-lg-6">
                 <div class="card-body">
                   <p class="card-text">"Le service était exceptionnel. Les employés étaient amicaux et compétents."</p>
                   <h5 class="card-title">John Doe</h5>
                   <p class="card-subtitle">Client satisfait</p>
                 </div>
+
+                
               </div>
+
+              
             </div>
+
             <div class="carousel-item">
               <div class="card">
                 <div class="card-body">
                   <p class="card-text">"J'ai été impressionné par la qualité des produits. Hautement recommandé."</p>
-                  <h5 class="card-title">Jane Doe</h5>
+                  <h5 class="card-title">Jane Doe3</h5>
                   <p class="card-subtitle">Client fidèle</p>
                 </div>
               </div>
@@ -509,7 +514,7 @@
               <div class="card">
                 <div class="card-body">
                   <p class="card-text">"J'ai été impressionné par la qualité des produits. Hautement recommandé."</p>
-                  <h5 class="card-title">Jane Doe</h5>
+                  <h5 class="card-title">Jane Doe3</h5>
                   <p class="card-subtitle">Client fidèle</p>
                 </div>
               </div>
@@ -526,14 +531,72 @@
           </a>
         </div>
       </div>
+    </section> --}}
+  {{-- --== testimonials === --}}
+
+    <!-- End testimonials  -->
+    <!-- End testimonials  -->
+
+
+
+    <!-- ======= partner ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Nos Partenaires et clients</h2>
+        </div>
+
+        <div class="row  d-flex align-items-stretch">
+          <div class="col-lg-3 faq-item aos-init aos-animate" data-aos="fade-up">
+            <img src="{{asset('assets/img/partner/partner.png')}}" height="100px" alt="logo">
+          </div>
+
+          <div class="col-lg-3 faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <img src="{{asset('assets/img/partner/partner1.png')}}" height="100px" alt="logo">
+          </div>
+
+          <div class="col-lg-3 faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <img src="{{asset('assets/img/partner/partner2.png')}}" alt="logo" style="height: 100px">
+          </div>
+
+          <div class="col-lg-3 faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <img src="{{asset('assets/img/partner/partner3.png')}}" height="100px" alt="logo">
+          </div>
+        </div>
+
+        <div class="row  d-flex align-items-stretch">
+          <div class="col-lg-3 faq-item aos-init aos-animate" data-aos="fade-up">
+            <img src="{{asset('assets/img/partner/partner5.jpg')}}" height="100px" alt="logo">
+          </div>
+
+          <div class="col-lg-3 faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <img src="{{asset('assets/img/partner/partner6.png')}}" height="100px" alt="logo">
+          </div>
+
+          <div class="col-lg-3 faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <img src="{{asset('assets/img/partner/partner7.png')}}" alt="logo" style="height: 100px">
+          </div>
+
+          <div class="col-lg-3 faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <img src="{{asset('assets/img/partner/partner8.png')}}" style="height:80px" alt="logo">
+          </div>
+        </div>
+
+
+        <div class="row  d-flex align-items-stretch">
+          <div class="col-lg-3 faq-item aos-init aos-animate" data-aos="fade-up">
+            <img src="{{asset('assets/img/partner/partner9.png')}}" height="100px" alt="logo">
+          </div>
+
+          <div class="col-lg-3 faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <img src="{{asset('assets/img/partner/partner10.png')}}" height="100px" alt="logo">
+          </div>
+        </div>
+
+      </div>
     </section>
-    {{-- --== testimonials === --}}
-
-
-      {{-- test --}}
-
-      
-      {{-- test --}}
+    <!-- ======= End partner ======= -->
 
 
     <!-- Contact -->
@@ -571,17 +634,112 @@
             </div>
           </div></div>
             <div class="col">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d993.0707894117758!2d-3.984357699185542!3d5.373721538027353!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1edd6ea31e79f%3A0x1cb6dff0d3e1919f!2sCroissance%20Numerique!5e0!3m2!1sfr!2sci!4v1707911881538!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d993.0707894117758!2d-3.984357699185542!3d5.373721538027353!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1edd6ea31e79f%3A0x1cb6dff0d3e1919f!2sCroissance%20Numerique!5e0!3m2!1sfr!2sci!4v1707911881538!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
-          
-
         </div>
 
       </div>
     </section>
     <!-- End contact -->
+
+
+
+    
+    {{-- <section><div class="owl-carousel owl-theme mt-5">
+        <div class="owl-item">
+            <div class="card">
+              sssss
+                <div class="img-card">
+                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                </div>
+                <div class="testimonial mt-4 mb-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
+                    saepe quo natus aut accusantium alias blanditiis.
+                </div>
+                <div class="name">
+                    Denis Richie
+                </div>
+            </div>
+        </div>
+        <div class="owl-item">
+            <div class="card">
+                <div class="img-card">
+                    <img src="https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                        alt="">
+                </div>
+                <div class="testimonial mt-4 mb-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
+                    saepe quo natus aut accusantium alias blanditiis.
+                </div>
+                <div class="name">
+                    Lisa Sthalekar
+                </div>
+            </div>
+        </div>
+        <div class="owl-item">
+            <div class="card">
+                <div class="img-card">
+                    <img src="https://images.pexels.com/photos/1036622/pexels-photo-1036622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                </div>
+                <div class="testimonial mt-4 mb-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
+                    saepe quo natus aut accusantium alias blanditiis.
+                </div>
+                <div class="name">
+                    Elizabith Richie
+                </div>
+            </div>
+        </div>
+        <div class="owl-item">
+            <div class="card">
+                <div class="img-card">
+                    <img src="https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                </div>
+                <div class="testimonial mt-4 mb-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
+                    saepe quo natus aut accusantium alias blanditiis.
+                </div>
+                <div class="name">
+                    Daniel Xavier
+                </div>
+            </div>
+        </div>
+        <div class="owl-item">
+            <div class="card">
+                <div class="img-card">
+                    <img src="https://images.pexels.com/photos/1832959/pexels-photo-1832959.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                </div>
+                <div class="testimonial mt-4 mb-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
+                    saepe quo natus aut accusantium alias blanditiis.
+                </div>
+                <div class="name">
+                    Emma Watson
+                </div>
+            </div>
+        </div>
+        <div class="owl-item">
+            <div class="card">
+                <div class="img-card">
+                    <img src="https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="">
+                </div>
+                <div class="testimonial mt-4 mb-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
+                    saepe quo natus aut accusantium alias blanditiis.
+                </div>
+                <div class="name">
+                    Mohammad Imran
+                </div>
+            </div>
+        </div>
+    </div></section> --}}
+
+    
 
   </main>
   <!-- End #main -->

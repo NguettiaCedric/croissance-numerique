@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{asset("assets/logo/logo.png")}}" style="width: 16px; height:100%"rel="icon">
+  <link href="{{asset("assets/logo/logo.png")}}" style="width: 16px; height:100%" rel="icon">
   {{-- <link href="{{asset("assets/img/logo.png")}}" rel="icon"> --}}
   <link href="{{asset("assets/img/apple-touch-icon.png")}}" rel="apple-touch-icon">
 
@@ -46,7 +46,7 @@
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">www.croissancenumerique.ci
         </a>
-        <i class="bi bi-phone-fill phone-icon"></i>  +225 07 07 540 555
+        <i class="bi bi-phone-fill phone-icon"></i> +225 07 07 540 555
       </div>
       <div class="social-links d-none d-md-block">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>

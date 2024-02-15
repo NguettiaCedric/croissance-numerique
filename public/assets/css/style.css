@@ -635,8 +635,9 @@ section {
 }
 
 .about .section-title p {
-  text-align: left;
-  font-style: italic;
+  /* text-align: left; */
+  /* font-style: italic; */
+  text-align: justify;
   color: #666;
 }
 
