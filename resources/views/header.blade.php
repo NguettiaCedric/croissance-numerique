@@ -21,7 +21,7 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo me-auto">
-        <img src="{{asset('assets/logo/logo.png')}}" alt="logo">
+        <a href="/"><img src="{{asset('assets/logo/logo.png')}}" alt="logo"></a>
 
         {{-- <h1><a href="index.html">Mamba</a></h1> --}}
         <!-- Uncomment below if you prefer to use an image logo -->
