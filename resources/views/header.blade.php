@@ -2,7 +2,7 @@
  <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@croissancenumerique.ci">
           contact@croissancenumerique.ci
         </a>
         <i class="bi bi-phone-fill phone-icon"></i>  +225 07 07 540 555
@@ -74,7 +74,7 @@
             </ul>
           </li> --}}
 
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="{{route('contact')}}">Contact</a></li>
     
           {{-- <a href="" class="buthover">
    <button  type="button" class="btn ms-2" style="
@@ -82,7 +82,7 @@
 
 
 
-  <a href="" class="buthover">
+  <a href="{{route('demande-demo')}}" class="buthover">
     <button type="button" class="btn ms-2 demo-btn">
       Demander une Demo
     </button>

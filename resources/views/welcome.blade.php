@@ -609,7 +609,9 @@
             <div class="info-box">
               <i class="bx bx-map"></i>
               <h4>Notre adresse</h4>
-              <p>Attoban</p>
+              <p>ATTOBAN 
+                ,CITE ATTOBAN 1, Villa 370 D
+              </p>
             </div>
           </div>
 
