@@ -138,7 +138,12 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div> --}}
-                <div class="text-center"><button type="submit" class="butForm" >Envoyer</button></div>
+                <div class="text-center"><button style="background: #428bca;
+                border-radius: 3px;
+                  border: 0;
+                  padding: 10px 30px;
+                  color: #fff;
+                  transition: 0.4s;" type="submit" class="butForm" >Envoyer</button></div>
               </form>
             </div>  
           </div>

@@ -79,7 +79,7 @@
                             
 
                             <div class="col-lg-6 form-group">
-                              <label for="objet">Sujet</label>{{-- <span class="text-danger"> *</span> --}}
+                              <label for="objet">Objet</label>{{-- <span class="text-danger"> *</span> --}}
                               <select class="form-control formreduis" style="border-radius: 3px;" name="objet" id="objet">
                                   <option value="" disabled selected>Choisisez une démonstration</option>
                                   <option value="Demo SAP Business One" >Demo SAP Business One</option>
@@ -97,7 +97,11 @@
                             <div class="error-message"></div>
                             <div class="sent-message">Your message has been sent. Thank you!</div>
                         </div> --}}
-                        <div class="text-center "><button class="butForm" type="submit" style="border-radius: 3px;">Envoyer</button></div>
+                        <div class="text-center "><button class="butForm" type="submit" style="border-radius: 3px; background: #428bca;
+                            border: 0;
+                            padding: 10px 30px;
+                            color: #fff;
+                            transition: 0.4s;">Envoyer</button></div>
                     </form>
                 </div>
             </div>
