@@ -21,7 +21,7 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo me-auto">
-        <img src="assets/logo/logo.png" alt="logo">
+        <img src="{{asset('assets/logo/logo.png')}}" alt="logo">
 
         {{-- <h1><a href="index.html">Mamba</a></h1> --}}
         <!-- Uncomment below if you prefer to use an image logo -->
@@ -30,15 +30,15 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
+          <li><a class="nav-link scrollto active" href="/">Accueil</a></li>
           <li><a class="nav-link scrollto" href="/a-propos">A propos</a></li>
           {{-- <li><a class="nav-link scrollto" href="#services">Services</a></li> --}}
 
           <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Integration de Solutions</a></li>
-              <li><a href="#">Accompagnement Digital</a></li>
-              <li><a href="#">Development d'Application</a></li>
+              <li><a href="{{route('integration')}}">Integration de Solutions</a></li>
+              <li><a href="{{route('accompagnement')}}">Accompagnement Digital</a></li>
+              <li><a href="{{route('developpement')}}">Development d'Application</a></li>
             </ul>
           </li>
 
@@ -46,8 +46,8 @@
 
           <li class="dropdown"><a href="#"><span>Solutions</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">SAP Business One</a></li>
-              <li><a href="#">SAP RSM</a></li>
+              <li><a href="{{route('sap')}}">SAP Business One</a></li>
+              <li><a href="{{route('rsm')}}">SAP RSM</a></li>
               {{-- <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li> --}}
             </ul>
