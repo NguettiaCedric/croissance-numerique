@@ -17,9 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
-Route::post('/store-contact', [HomeController::class, 'store_contact'])->name('store_contact');
+Route::post('/store-contact', [HomeController::class, 'store_contact']);
 
 Route::get('/demande-demo', [HomeController::class, 'demandeDemo'])->name('demande-demo');
+Route::post('/store-demande-demo', [HomeController::class, 'store_demandeDemo']);
 
 
 Route::get('/a-propos', function(){

@@ -35,10 +35,10 @@
             </div>
   
             <div class="col-lg-8 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-              <form action="{{route('store_contact')}}" method="POST" role="form" class="php-email-form">
+              <form action="{{url('/store-contact')}}" method="POST" role="" class="">
                 @csrf
 
-                @if ($errors->any())
+               {{--  @if ($errors->any())
                     <div class='alert alert-danger text-sm p-2' role="alert">
                         <div class="font-weight-bold">{{ __('Quelque chose s\'est mal passé.') }}</div>
                         <ul>
@@ -49,6 +49,13 @@
                     </div>
                 @endif
 
+                @if ($message = Session::get('success'))
+                    <div class="alert alert-success">
+                        <p>{{ $message }}</p>
+                    </div>
+                @endif --}}
+
+                
 
                 <div class="row">
                   <div class="col-lg-6 form-group">
@@ -126,14 +133,12 @@
                   border-radius: 3px;
               " name="message" rows="5" placeholder="Message"></textarea>
                 </div>
-                <div class="my-3">
+                {{-- <div class="my-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-                <div class="text-center"><button type="submit" style="
-                    border-radius: 3px;
-                ">Envoyer</button></div>
+                </div> --}}
+                <div class="text-center"><button type="submit" class="butForm" >Envoyer</button></div>
               </form>
             </div>  
           </div>

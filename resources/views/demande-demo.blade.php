@@ -31,7 +31,8 @@
                 </div>
 
                 <div class="col-lg-8 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <form action="{{url('/store-demande-demo')}}" method="POST" role="" class="">
+                        @csrf
                         <div class="row">
                             <div class="col-lg-6 form-group">
                                 <label for="name">Nom & Prénom</label><span class="text-danger"> *</span>
@@ -72,29 +73,31 @@
                             <div class="col-lg-6 form-group">
                                 <div class="form-group">
                                     <label for="compagnie">Compagnie</label><span class="text-danger"> *</span>
-                                    <input type="text" class="form-control formreduis" style="border-radius: 3px;" name="compagnie" id="compagnie" placeholder="ex: Croissance Numerique" required="" />
+                                    <input type="text" class="form-control formreduis" style="border-radius: 3px;" name="compagnie" id="compagnie" placeholder="ex: Croissance Numerique" />
                                 </div>
                             </div>
                             
 
                             <div class="col-lg-6 form-group">
                               <label for="objet">Sujet</label>{{-- <span class="text-danger"> *</span> --}}
-                              <select class="form-control formreduis" style="border-radius: 3px;" name="objet" id="objet" required="">
-                                  <option value="" disabled selected>Demande de démonstration</option>
+                              <select class="form-control formreduis" style="border-radius: 3px;" name="objet" id="objet">
+                                  <option value="" disabled selected>Choisisez une démonstration</option>
+                                  <option value="Demo SAP Business One" >Demo SAP Business One</option>
+                                  <option value="RSM"  >Demo RSM</option>
                                   
                               </select>
                           </div>
                         </div>
 
                         <div class="form-group">
-                            <textarea class="form-control formreduis" style="border-radius: 3px;" name="message" rows="5" placeholder="Message" required=""></textarea>
+                            <textarea class="form-control formreduis" style="border-radius: 3px;" name="message" rows="5" placeholder="Message" ></textarea>
                         </div>
-                        <div class="my-3">
+                       {{--  <div class="my-3">
                             <div class="loading">Loading</div>
                             <div class="error-message"></div>
                             <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
-                        <div class="text-center"><button type="submit" style="border-radius: 3px;">Envoyer</button></div>
+                        </div> --}}
+                        <div class="text-center "><button class="butForm" type="submit" style="border-radius: 3px;">Envoyer</button></div>
                     </form>
                 </div>
             </div>
