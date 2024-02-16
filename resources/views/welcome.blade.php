@@ -160,7 +160,7 @@
     
     <section id="" class="faq section-bg">
       <div class="container" data-aos="fade-up">
-        <div class="row  d-flex align-items-stretch">
+        <div class="row py-3 d-flex align-items-stretch">
           <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
             {{-- <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4> --}}
             <h2 class="pt-4">Qu'est-ce que SAP Business One ? </h2>
@@ -176,7 +176,7 @@
           </div>
         </div>
 
-        <div class="row  d-flex align-items-stretch">
+        <div class="row py-3 d-flex align-items-stretch">
 
           <div class="col-lg-6 faq-item" data-aos="fade-up">
             <img src="assets/img/img1.jpg" class="img-fluid" alt="">

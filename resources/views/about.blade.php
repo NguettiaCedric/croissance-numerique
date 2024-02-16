@@ -17,11 +17,11 @@
                         <p class="text-justify">Chez Croissance Numerique, nous réduisons la complexité opérationnelle liée
                             à la croissance pour
                             aider les PME à atteindre leurs objectifs et leurs ambitions. Nous sommes fiers d’être un
-                            partenaire privilégié de <a href="">SAP Business One</a> pour accompagner les entreprises
+                            partenaire privilégié de <a href="{{route('sap')}}">SAP Business One</a> pour accompagner les entreprises
                             dans toutes les étapes de leurs projets d’expansion.</p>
                         <p>Notre équipe est prête à répondre aux besoins de votre entreprise !</p>
                         <p>
-                            <a href="#" class="btn btn-outline-primary">Contactez-nous <i
+                            <a href="{{route('contact')}}" class="btn btn-outline-primary">Contactez-nous <i
                                     class="fa fa-arrow-circle-right"></i> </a>
                         </p>
                     </div>
@@ -42,7 +42,7 @@
                         entreprises à simplifier leurs
                         processus opérationnels clés pour maximiser leur efficacité et leur rentabilité.</p>
                     <p class="text-justify">
-                        En tant que partenaire de confiance de <a href="#">SAP Business One</a> , nous sommes
+                        En tant que partenaire de confiance de <a href="{{route('sap')}}">SAP Business One</a> , nous sommes
                         déterminés à propulser les
                         entreprises de nos clients à un niveau supérieur. Notre approche est complète : nous agissons comme
                         une précieuse extension de votre équipe tout au long du processus, en nous concentrant sur

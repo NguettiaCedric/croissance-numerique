@@ -626,9 +626,9 @@ section {
   padding-bottom: 30px;
 }
 
-.about .container {
+/* .about .container {
   box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
-}
+} */
 
 .about .video-box img {
   padding: 15px 0;
