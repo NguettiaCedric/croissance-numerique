@@ -90,20 +90,8 @@ class AdminController extends Controller
 
 
 
-    public function update_projet(Request $request)
+    public function update_projet1(Request $request, $id)
     {
-        /* $request->validate([
-            'title' => 'required',
-            'description' => 'required',
-            'image' => 'image|nullable|max:1999',
-        ]); 
-        $projet->update([
-            'title' => $request->title,
-            'description' => $request->description,
-            // 'image' => $image
-
-        ]); */
-
         $this->validate($request, [
             'title' => 'required',
             // 'description' => 'required',
@@ -116,10 +104,15 @@ class AdminController extends Controller
             'image' => 'image|nullable|max:1999',
         ]); */
 
-        // dd($request);
+
+        $projet = Projet::find($id);
+
+        dd($projet);
 
         $projet = projet::find($request->input('id'));
-        // dd($projet);
+        dd($projet);
+
+
         $projet->title = $request->input('title');
         $projet->description = $request->input('description');
 
@@ -155,6 +148,49 @@ class AdminController extends Controller
 
     }
 
+
+    public function update_projet(Request $request, $id)
+    {
+        $this->validate($request, [
+            'title' => 'required',
+            'description' => 'required',
+            // 'image' => 'image|nullable|max:1999',
+        ]);
+
+        $projet = Projet::find($id);
+
+        if (!$projet) {
+            return back()->with('error', 'Projet non trouvé');
+        }
+
+        $projet->title = $request->input('title');
+        $projet->description = $request->input('description');
+
+        if ($request->hasFile('image')) {
+            $this->validate($request, [
+                'image' => 'image|nullable|max:1999',
+            ]);
+
+            $fileNameWithExt = $request->file('image')->getClientOriginalName();
+            $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('image')->getClientOriginalExtension();
+            $fileNameToStore = $fileName.'_'.time().'.'.$extension;
+
+            $path = $request->file('image')->storeAs('public/projet_image', $fileNameToStore);
+
+            if ($projet->image != 'noimage.jpg') {
+                Storage::delete('public/projet_image/'.$projet->image);
+            }
+
+            $projet->image = $fileNameToStore;
+
+            $projet->save();
+        }
+
+        $projet->save();
+
+        return back()->with('success', 'Projet enregistré avec succès !!!');
+    }
 
     
     public function activer_projet($id){
