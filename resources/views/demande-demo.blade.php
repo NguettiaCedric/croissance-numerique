@@ -25,6 +25,13 @@
                 --}}
             </div>
 
+            
+            @if (session()->has('success'))
+                <div class="alert-success mb-4 p-3">
+                    <h5 class="text-center">{{ session()->get('success') }}</h5>
+                </div>
+            @endif
+
             <div class="row">
                 <div class="col-lg-4 d-none d-lg-block">
                     <img src="assets/img/img-demo-.jpg" class="img-fluid" alt="demande de demo" style="height: 100%; object-fit: cover; border-radius: 2px;" />
@@ -33,24 +40,40 @@
                 <div class="col-lg-8 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                     <form action="{{url('/store-demande-demo')}}" method="POST" role="" class="">
                         @csrf
+
                         <div class="row">
                             <div class="col-lg-6 form-group">
                                 <label for="name">Nom & Prénom</label><span class="text-danger"> *</span>
-                                <input type="text" name="name" class="form-control formreduis" style="border-radius: 3px;" id="name" placeholder="Nom & Prénom" required="" />
+                                <input type="text" name="name" class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" style="border-radius: 3px;" id="name" placeholder="Nom & Prénom" />
+                                @error('name')
+                                <div class="text-danger text-center">
+                                    <strong>{{ $message }}</strong>
+                                </div>
+                                @enderror
                             </div>
                             <div class="col-lg-6 form-group">
                                 <label for="contact1">Contact</label><span class="text-danger"> *</span>
-                                <input type="phone" class="form-control formreduis" style="border-radius: 3px;" name="contact" id="contact1" placeholder="+225 00 00 00 00 00" required="" />
+                                <input type="phone" class="form-control {{ $errors->has('contact') ? 'is-invalid' : '' }} " style="border-radius: 3px;" name="contact" id="contact1" placeholder="+225 00 00 00 00 00" />
+                                @error('contact')
+                                <div class="text-danger text-center">
+                                    <strong>{{ $message }}</strong>
+                                </div>
+                                @enderror
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6 form-group">
                                 <label for="email">Email</label><span class="text-danger"> *</span>
-                                <input type="email" class="form-control formreduis" style="border-radius: 3px;" name="email" id="email" placeholder="Email" required="" />
+                                <input type="email" class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }} " style="border-radius: 3px;" name="email" id="email" placeholder="Email" />
+                                @error('email')
+                                <div class="text-danger text-center">
+                                    <strong>{{ $message }}</strong>
+                                </div>
+                                @enderror
                             </div>
                             <div class="col-lg-6 form-group">
                                 <label for="industrie">Industrie</label>{{-- <span class="text-danger"> *</span> --}}
-                                <select class="form-control formreduis" style="border-radius: 3px;" name="industrie" id="industrie" required="">
+                                <select class="form-control " style="border-radius: 3px;" name="industrie" id="industrie">
                                     <option value="" disabled selected>Choisissez une industrie</option>
                                     <!-- Ajoutez ici les options de l'industrie -->
                                     <option value="Distribution et commerce de gros">Distribution et commerce de gros</option>
@@ -73,24 +96,35 @@
                             <div class="col-lg-6 form-group">
                                 <div class="form-group">
                                     <label for="compagnie">Compagnie</label><span class="text-danger"> *</span>
-                                    <input type="text" class="form-control formreduis" style="border-radius: 3px;" name="compagnie" id="compagnie" placeholder="ex: Croissance Numerique" />
+                                    <input type="text" class="form-control {{ $errors->has('compagnie') ? 'is-invalid' : '' }} " style="border-radius: 3px;" name="compagnie" id="compagnie" placeholder="ex: Croissance Numerique" />
                                 </div>
+                                @error('compagnie')
+                                <div class="text-danger text-center">
+                                    <strong>{{ $message }}</strong>
+                                </div>
+                                @enderror
                             </div>
                             
 
                             <div class="col-lg-6 form-group">
-                              <label for="objet">Objet</label>{{-- <span class="text-danger"> *</span> --}}
-                              <select class="form-control formreduis" style="border-radius: 3px;" name="objet" id="objet">
-                                  <option value="" disabled selected>Choisisez une démonstration</option>
-                                  <option value="Demo SAP Business One" >Demo SAP Business One</option>
-                                  <option value="RSM"  >Demo RSM</option>
-                                  
-                              </select>
-                          </div>
+                                <label for="objet">Objet</label><span class="text-danger"> *</span>
+                                <select class="form-control{{ $errors->has('objet') ? 'is-invalid' : '' }} " style="border-radius: 3px;" name="objet" id="objet">
+                                    <option value="" disabled selected>Choisisez une démonstration</option>
+                                    <option value="Demo SAP Business One" >Demo SAP Business One</option>
+                                    <option value="RSM"  >Demo RSM</option>
+                                    
+                                </select>
+                                @error('objet')
+                                <div class="text-danger text-center">
+                                    <strong>{{ $message }}</strong>
+                                </div>
+                                @enderror
+
+                            </div>
                         </div>
 
                         <div class="form-group">
-                            <textarea class="form-control formreduis" style="border-radius: 3px;" name="message" rows="5" placeholder="Message" ></textarea>
+                            <textarea class="form-control " style="border-radius: 3px;" name="message" rows="5" placeholder="Message" ></textarea>
                         </div>
                        {{--  <div class="my-3">
                             <div class="loading">Loading</div>
