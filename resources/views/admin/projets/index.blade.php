@@ -21,7 +21,7 @@
 @endsection
 
 @section('title')
-    Ajout de projet
+    Liste de projet
 @endsection
 
 @section('content') 
@@ -69,7 +69,7 @@
                 <tbody>
                   @foreach ($projets as $projet)
                     <tr>
-                      <td>1</td>
+                      <td>{{ $loop->iteration }}</td>
                       <td>
                         <img src="/storage/projet_image/{{$projet->image}}" style="height : 50px; width : 50px"
                           class="img-circle elevation-2" alt="User Image">
@@ -77,20 +77,20 @@
                       <td>{{$projet->title}}</td>
                       <td> {{$projet->description}}</td>
                       <td>
-                        <a href="#" class="btn btn-success">Unactivate</a>
-                        <a href="#" class="btn btn-primary"><i class="nav-icon fas fa-edit"></i></a>
-                        <a href="#" id="delete" class="btn btn-danger"><i class="nav-icon fas fa-trash"></i></a>
+
+                          @if ($projet->status != 0)                            
+                            <a href="{{url('/desactiver-projet/'.$projet->id)}}" class="btn btn-success">Désactiver</a>
+                          @else                            
+                            <a href="{{url('/activer-projet/'.$projet->id)}}" class="btn btn-warning">Activer</a>
+                          @endif
+
+                          <a href="{{url('/edit-projet/'.$projet->id)}}" class="btn btn-primary"><i class="nav-icon fas fa-edit"></i></a>
+
+                          <a href="{{url('/delete-projet/'.$projet->id)}}" id="delete" class="btn btn-danger"><i class="nav-icon fas fa-trash"></i></a>
                       </td>
                   </tr>
                   @endforeach
                   
-                    {{-- @dump($projets) --}}
-                    
-                  {{-- @foreach ($projets as $projet)
-                      <p>{{$projet->title}}</p>
-                      <p>{{$projet->description}}</p>
-                  @endforeach --}}
-
                 </tbody>
                 <tfoot>
                   <tr>
@@ -150,7 +150,7 @@
   $(document).on("click", "#delete", function (e) {
     e.preventDefault();
     var link = $(this).attr("href");
-    bootbox.confirm("Do you really want to delete this element ?", function (confirmed) {
+    bootbox.confirm("Souhaitez-vous supprimer cet element?", function (confirmed) {
       if (confirmed) {
         window.location.href = link;
       };

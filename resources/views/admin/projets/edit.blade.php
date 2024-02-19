@@ -1,7 +1,7 @@
 @extends('admin.layout_admin.layouts')
 
 @section('title')
-    Ajout de projet
+    Modification de projet
 @endsection
 
 @section('content') 
@@ -12,7 +12,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Ajout de projet</h1>
+          <h1>Modification de projet</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
@@ -43,12 +43,14 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form id="quickForm" method="POST" action="{{route('store-projet')}}" enctype="multipart/form-data">
+            <form id="quickForm" method="POST" action="{{url('/update-projet/'.$projet->id)}}" enctype="multipart/form-data">
               @csrf
+              {{-- @method('PUT') --}}
+              @method('PUT')
               <div class="card-body">
                 <div class="form-group">
                   <label for="title">Nom de l'entreprise</label>
-                  <input type="text" name="title" class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }}" id="name"
+                  <input type="text" name="title" value="{{$projet->title}}" class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }}" id="name"
                     placeholder="Nom de l'entreprise">
                     @error('title')
                       <div class="text-danger text-center">
@@ -70,19 +72,15 @@
 
                 <div class="form-group pt-2">
                   <label for="description">Description</label>
-                    <textarea type="text" name="description" class="form-control {{ $errors->has('description') ? 'is-invalid' : '' }} " id="description"
-                    placeholder="Description"  cols="30" rows="10"></textarea>
+                    <textarea type="text"name="description" class="form-control {{ $errors->has('description') ? 'is-invalid' : '' }} " id="description"
+                    placeholder="Description"  cols="30" rows="10">{{$projet->description}}</textarea>
 
                     @error('description')
                       <div class="text-danger text-center">
                           <strong>{{ $message }}</strong>
                       </div>
-                    @enderror
-                    
-
+                    @enderror                  
                     {{-- <textarea></textarea> --}}
-
-
                 </div>
                 
                 

@@ -27,6 +27,11 @@ Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard
 Route::get('/liste-projet', [AdminController::class, 'projet'])->name('liste-projet');
 Route::get('/ajout-projet', [AdminController::class, 'projets'])->name('ajout-projet');
 Route::post('/store-projet', [AdminController::class, 'store_projets'])->name('store-projet');
+Route::get('/activer-projet/{id}', [AdminController::class, 'activer_projet']);
+Route::get('/desactiver-projet/{id}', [AdminController::class, 'desactiver_projet']);
+Route::get('/edit-projet/{id}', [AdminController::class, 'edit_projet']);
+Route::post('/update-projet/{id}', [AdminController::class, 'update_projet']);
+Route::get('/delete-projet/{id}', [AdminController::class, 'delete_projet']);
 
 
 Route::get('/a-propos', function(){
