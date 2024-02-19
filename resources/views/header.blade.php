@@ -38,7 +38,7 @@
             <ul>
               <li><a href="{{route('integration')}}">Integration de Solutions</a></li>
               <li><a href="{{route('accompagnement')}}">Accompagnement Digital</a></li>
-              <li><a href="{{route('developpement')}}">Développment web</a></li>
+              <li><a href="{{route('developpement')}}">Développement web</a></li>
             </ul>
           </li>
 
@@ -54,7 +54,7 @@
           </li>
 
           <li><a class="nav-link scrollto" href="#portfolio">Projets</a></li>
-          <li><a class="nav-link scrollto" href="https://blog.croissancebumerique.ci">Blog</a></li>
+          <li><a class="nav-link scrollto" href="https://blog.croissancenumerique.ci">Blog</a></li>
           {{-- <li><a class="nav-link scrollto" href="#team">Team</a></li> --}}
 
           {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>

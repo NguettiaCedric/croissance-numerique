@@ -44,7 +44,7 @@ h6,
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #428bca;
+  background: #fedd14;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -1476,16 +1476,16 @@ section {
 }
 
 #footer {
-  background: #587187;
+  background: #1a75bb;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #5c768d;
-  border-top: 1px solid #768fa6;
-  border-bottom: 1px solid #67839c;
+  background: #1a75bb;
+  border-top: 1px solid #1a75bb;
+  border-bottom: 1px solid #fff;
   padding: 60px 0 30px 0;
 }
 

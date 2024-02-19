@@ -34,11 +34,11 @@
 
             <div class="row">
                 <div class="col-lg-4 d-none d-lg-block">
-                    <img src="assets/img/img-demo-.jpg" class="img-fluid" alt="demande de demo" style="height: 100%; object-fit: cover; border-radius: 2px;" />
+                    <img src="{{asset('assets/img/img-demo-.jpg')}}" class="img-fluid" alt="demande de demo" style="height: 100%; object-fit: cover; border-radius: 2px;" />
                 </div>
 
                 <div class="col-lg-8 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                    <form action="{{url('/store-demande-demo')}}" method="POST" role="" class="">
+                    <form action="{{url('/store-demande-demo')}}" method="POST" role="" class="shadow p-3 mb-5 bg-body-tertiary rounded">
                         @csrf
 
                         <div class="row">
