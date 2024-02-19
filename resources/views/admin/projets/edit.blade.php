@@ -46,7 +46,6 @@
             <form id="quickForm" method="POST" action="{{url('/update-projet/'.$projet->id)}}" enctype="multipart/form-data">
               @csrf
               {{-- @method('PUT') --}}
-              @method('PUT')
               <div class="card-body">
                 <div class="form-group">
                   <label for="title">Nom de l'entreprise</label>
@@ -59,7 +58,7 @@
                      @enderror
                 </div>
 
-                <label for="exampleInputFile">Product image</label>
+                {{-- <label for="exampleInputFile">Product image</label>
                 <div class="input-group">
                   <div class="custom-file">
                     <input type="file" name="image" class="custom-file-input" id="exampleInputFile">
@@ -68,9 +67,9 @@
                   <div class="input-group-append">
                     <span class="input-group-text">Upload</span>
                   </div>
-                </div>
+                </div> --}}
 
-                <div class="form-group pt-2">
+               {{--  <div class="form-group pt-2">
                   <label for="description">Description</label>
                     <textarea type="text"name="description" class="form-control {{ $errors->has('description') ? 'is-invalid' : '' }} " id="description"
                     placeholder="Description"  cols="30" rows="10">{{$projet->description}}</textarea>
@@ -80,8 +79,7 @@
                           <strong>{{ $message }}</strong>
                       </div>
                     @enderror                  
-                    {{-- <textarea></textarea> --}}
-                </div>
+                </div> --}}
                 
                 
                 
