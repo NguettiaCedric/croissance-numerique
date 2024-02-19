@@ -42,7 +42,8 @@ class HomeController extends Controller
             'message'  => $request->message,
         ]);
 
-        return redirect()->route('contact');
+        // return redirect()->route('contact');
+        return back()->with('success' , 'Merci de nous avoir contacté, Nous vous prendrons en charge sous peu de temps !!!');
     }
 
 
@@ -70,7 +71,9 @@ class HomeController extends Controller
             'message'  => $request->message,
         ]);
 
-        return redirect()->route('contact');
+        // return redirect()->route('contact');
+        return back()->with('success' , 'Merci votre demande a été envoyé avec succès !!!');
+
     }
 
 }
