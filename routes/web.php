@@ -34,6 +34,7 @@ Route::post('/update-projet/{id}', [AdminController::class, 'update_projet']);
 Route::get('/delete-projet/{id}', [AdminController::class, 'delete_projet']);
 
 
+
 Route::get('/a-propos', function(){
     return view('about');
 })->name('a-propos');
