@@ -36,7 +36,7 @@ Route::get('/delete-projet/{id}', [AdminController::class, 'delete_projet']);
 
 Route::get('/a-propos', function(){
     return view('about');
-});
+})->name('a-propos');
 Route::get('solutions/sap-business-one', function(){
     return view('solutions.sap');
 })->name('sap');
