@@ -77,7 +77,6 @@
                       <td>{{$projet->title}}</td>
                       <td> {{$projet->description}}</td>
                       <td>
-
                           @if ($projet->status != 0)                            
                             <a href="{{url('/desactiver-projet/'.$projet->id)}}" class="btn btn-success">Désactiver</a>
                           @else                            

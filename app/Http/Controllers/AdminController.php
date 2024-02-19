@@ -88,6 +88,8 @@ class AdminController extends Controller
         ]);
     }
 
+
+
     public function update_projet(Request $request)
     {
         /* $request->validate([
@@ -95,8 +97,6 @@ class AdminController extends Controller
             'description' => 'required',
             'image' => 'image|nullable|max:1999',
         ]); 
-
-
         $projet->update([
             'title' => $request->title,
             'description' => $request->description,
@@ -104,11 +104,10 @@ class AdminController extends Controller
 
         ]); */
 
-
         $this->validate($request, [
             'title' => 'required',
-            'description' => 'required',
-            'image' => 'image|nullable|max:1999',
+            // 'description' => 'required',
+            // 'image' => 'image|nullable|max:1999',
         ]);
 
        /*  $request->validate([
@@ -118,10 +117,12 @@ class AdminController extends Controller
         ]); */
 
         // dd($request);
+
         $projet = projet::find($request->input('id'));
         // dd($projet);
-        $projet->title = $request->title;
+        $projet->title = $request->input('title');
         $projet->description = $request->input('description');
+
 
 
         if ($request->hasFile('image')) {
@@ -144,14 +145,8 @@ class AdminController extends Controller
 
             $projet->image = $fileNameToStore;
 
-            $projet->update();
+            // $projet->update();
         }
-
-
-        /* else
-        {
-            $fileNameToStore = 'noimage.jpg';
-        } */
 
         $projet->update();
 
