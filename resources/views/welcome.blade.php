@@ -16,7 +16,7 @@
 
                     <!-- Slide 1 -->
                     <div class="carousel-item active"
-                        style="background-image: url('assets/img/slide/slide-5.png'); width:100%;">
+                        style="background-image: url('assets/img/slide/slide-1.png'); width:100%;">
                         <div class="carousel-container">
                             <div class="carousel-content container">
                                 <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Mamba</span></h2>
@@ -46,7 +46,7 @@
                     </div>
 
                     <!-- Slide 3 -->
-                    <div class="carousel-item" style="background-image: url('assets/img/slide/slide-3.png');">
+                    <div class="carousel-item" style="background-image: url('assets/img/slide/slide-5.png');">
                         <div class="carousel-container">
                             <div class="carousel-content container">
                                 <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
