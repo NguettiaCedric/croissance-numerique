@@ -23,7 +23,9 @@ Route::post('/store-contact', [HomeController::class, 'store_contact']);
 Route::get('/demande-demo', [HomeController::class, 'demandeDemo'])->name('demande-demo');
 Route::post('/store-demande-demo', [HomeController::class, 'store_demandeDemo']);
 
+
 Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+
 Route::get('/liste-projet', [AdminController::class, 'projet'])->name('liste-projet');
 Route::get('/ajout-projet', [AdminController::class, 'projets'])->name('ajout-projet');
 Route::post('/store-projet', [AdminController::class, 'store_projets'])->name('store-projet');
