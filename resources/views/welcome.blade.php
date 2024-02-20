@@ -19,12 +19,9 @@
                         style="background-image: url('assets/img/slide/slide-1.png'); width:100%;">
                         <div class="carousel-container">
                             <div class="carousel-content container">
-                                <h2 class="animate__animated animate__fadeInDown">SAP <span>Business One</span></h2>
-                                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui
-                                    aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
-                                    mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
-                                    vel. Minus et tempore modi architecto.</p>
-                                <a href="{{route('sap')}}" class="btn-get-started animate__animated animate__fadeInUp scrollto">En savoir plus</a>
+                                <h2 class="animate__animated animate__fadeInDown">Bienvenue à <br> <span>Croissance Numerique</span></h2>
+                                <p class="animate__animated animate__fadeInUp">La société de services spécialisée dans l’accompagnement des entreprises dans leur transformation digitale.</p>
+                                <a href="{{url('/a-propos')}}" class="btn-get-started animate__animated animate__fadeInUp scrollto">En savoir plus</a>
                             </div>
                         </div>
                     </div>
@@ -89,10 +86,11 @@
 
                         <div class="section-title">
                             <h2>A propos</h2>
-                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
-                                Sit sint consectetur velit.
-                                Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                                Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                            <p>
+                                Créée en 2016 par Monsieur LOUIS DIAKITE (Président du Groupe ALINK) dans le but de proposer, d’assister
+                                 et d’intégrer des solutions applicatives adaptées aux besoins réels des clients, Croissance Numerique est une
+                                  société de services spécialisée dans l’accompagnement des entreprises dans leur transformation digitale. Nous aidons les petites et moyennes entreprises
+                                 à simplifier leurs processus opérationnels clés pour maximiser leur efficacité et leur rentabilité.
                             </p>
 
                         </div>
@@ -134,27 +132,29 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
                         <div class="icon"><i class="bi bi-cpu"></i></div>
-                        <h4 class="title"><a href="">Integration de solution</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
-                            sint occaecati cupiditate non provident </p>
+                        <h4 class="title"><a href="{{route('integration')}}">Integration de solution</a></h4>
+                        <p class="description">
+                            L'intégration de solutions désigne le processus de connexion et d'interaction entre différentes technologies, logiciels
+                             ou systèmes au sein d'une organisation qui l'une de nos expertises. {{-- L'objectif est d'assurer une collaboration harmonieuse entre
+                             ces éléments pour améliorer l'efficacité opérationnelle, optimiser les processus et favoriser une meilleure prise de décision.  --}}        
+                        </p>
                         {{-- <button type="button" class="btn" style="background: #ffdd15">En savoir plus</button> --}}
-                        <a href="{{ route('a-propos') }}" class="btn btn-warning">En savoir plus</a>
+                        <a href="{{ route('integration')}}" class="btn btn-warning">En savoir plus</a>
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon"><i class="bi bi-cloud-minus-fill"></i></div>
-                        <h4 class="title"><a href="">Accompagnement Digital</a></h4>
-                        <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat tarad limino ata</p>
+                        <h4 class="title"><a href="{{route('accompagnement')}}">Accompagnement Digital</a></h4>
+                        <p class="description">Nous vous accompagnons à travers la transition vers des solutions numériques afin d'améliorer vos processus, vos services ou votre présence en ligne.</p> <br>
                         {{-- <button type="button" class="btn" style="background: #ffdd15">En savoir plus</button> --}}
-                        <a href="{{ route('a-propos') }}" class="btn btn-warning">En savoir plus</a>
+                        <a href="{{ route('accompagnement') }}" class="btn btn-warning">En savoir plus</a>
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon"><i class="bi bi-globe"></i></div>
-                        <h4 class="title"><a href="">Développement d'appliation</a></h4>
-                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur consequat tarad limino ata</p>
+                        <h4 class="title"><a href="{{route('developpement')}}">Développement d'appliation</a></h4>
+                        <p class="description">Nous mettons notre expertise à votre service pour vous guider tout au long du développement d'applications, 
+                            afin d'optimiser vos processus... <br> <br> </p>
                         {{-- <button type="button" class="btn" style="background: #ffdd15">En savoir plus</button> --}}
-                        <a href="{{ route('a-propos') }}" class="btn btn-warning">En savoir plus</a>
+                        <a href="{{ route('developpement') }}" class="btn btn-warning">En savoir plus</a>
 
                     </div>
                     {{-- <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
@@ -276,9 +276,7 @@
 
                 <div class="section-title">
                     <h2>Nos projets réalisés</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                        fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>Découvrez ici quelques projets réalisés pour nos partenaires et clients.</p>
                 </div>
 
                 {{-- <div class="row">
@@ -294,33 +292,33 @@
 
                 <div class="row portfolio-container">
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    @foreach ($projets as $projet)
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                            <img src="/storage/projet_image/{{$projet->image}}" class="img-fluid" alt="">
                             <div class="portfolio-info">
-                                <h4>Installation SAP Business one</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit!</p>
+                                <h4>{{$projet->title}}</h4>
+                                <p>{{ Str::limit($projet->description, 35) }}</p>
                                 <div class="portfolio-links">
 
-                                    <a href="#">
+                                    <a href="{{$projet->lien}}">
                                         <i class="bi bi-plus"></i>
                                     </a>
                                     {{-- <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> --}}
-
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @endforeach
+                    
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    {{-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
                             <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Tracabilite RSM</h4>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, eius!</p>
-                                <div class="portfolio-links">
-                                    {{-- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> --}}
+                                <div class="portfolio-links">                                    
                                     <a href="#">
                                         <i class="bi bi-plus"></i>
                                     </a>
@@ -336,9 +334,7 @@
                             <div class="portfolio-info">
                                 <h4>SAP RSM</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, iusto.</p>
-                                <div class="portfolio-links">
-                                    {{-- <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> --}}
+                                <div class="portfolio-links">                                    
                                     <a href="#">
                                         <i class="bi bi-plus"></i>
                                     </a>
@@ -371,8 +367,6 @@
                                 <h4>Tracabilite RSM</h4>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, incidunt.</p>
                                 <div class="portfolio-links">
-                                    {{-- <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> --}}
                                     <a href="#">
                                         <i class="bi bi-plus"></i>
                                     </a>
@@ -389,16 +383,13 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quidem? Aperiam,
                                     nostrum. Perferendis, quidem aperiam.</p>
                                 <div class="portfolio-links">
-                                    {{-- <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> --}}
                                     <a href="#">
                                         <i class="bi bi-plus"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
+                    </div> --}}
                 </div>
 
             </div>

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('welcome');
 
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::post('/store-contact', [HomeController::class, 'store_contact']);
@@ -23,7 +23,9 @@ Route::post('/store-contact', [HomeController::class, 'store_contact']);
 Route::get('/demande-demo', [HomeController::class, 'demandeDemo'])->name('demande-demo');
 Route::post('/store-demande-demo', [HomeController::class, 'store_demandeDemo']);
 
+
 Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+
 Route::get('/liste-projet', [AdminController::class, 'projet'])->name('liste-projet');
 Route::get('/ajout-projet', [AdminController::class, 'projets'])->name('ajout-projet');
 Route::post('/store-projet', [AdminController::class, 'store_projets'])->name('store-projet');
@@ -32,6 +34,7 @@ Route::get('/desactiver-projet/{id}', [AdminController::class, 'desactiver_proje
 Route::get('/edit-projet/{id}', [AdminController::class, 'edit_projet']);
 Route::post('/update-projet/{id}', [AdminController::class, 'update_projet']);
 Route::get('/delete-projet/{id}', [AdminController::class, 'delete_projet']);
+Route::get('/projet/{id}', [AdminController::class, 'show_projet'])->name('projet.show');
 
 
 

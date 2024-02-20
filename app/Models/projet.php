@@ -9,11 +9,13 @@ class projet extends Model
 {
     use HasFactory;
 
+    // protected $primaryKey = 'id';
     protected $fillable = [
         'title',
         'slug',
         'satuts',
         'description',
         'image',
+        'lien',
     ];
 }

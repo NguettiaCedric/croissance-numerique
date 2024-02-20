@@ -176,12 +176,12 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index.html" class="brand-link">
+            <a href="{{route('welcome')}}" class="brand-link">
                 <img src="{{asset("assets/img/fav.png")}}" alt="Logo" class="brand-image img-circle elevation-3"
                     style="opacity: .8">
                 <span class="brand-text font-weight-light">Croissance Numerique</span>
             </a>
-
+            
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user panel (optional) -->
@@ -377,6 +377,20 @@
     <script src="{{asset('admin/dist/js/pages/dashboard.js')}}"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="{{asset('admin/dist/js/demo.js')}}"></script>
+    
+    <!--Start of Tawk.to Script-->
+    {{-- <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/65d4797e9131ed19d96eec75/1hn2vl63o';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script> --}}
+    <!--End of Tawk.to Script-->
 
     @yield('style')
 
