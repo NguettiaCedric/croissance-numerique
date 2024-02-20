@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Mail\ContactMail;
 use App\Models\contact;
 use App\Models\demande;
 use App\Models\demo;
 use App\Models\projet;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -45,7 +47,7 @@ class HomeController extends Controller
             
         ]);
 
-        contact::create([
+        $contact = contact::create([
             'name'  => $request->name,
             'contact'  => $request->contact,
             'email'  => $request->email,
@@ -54,9 +56,13 @@ class HomeController extends Controller
             'objet'  => $request->objet,
             'message'  => $request->message,
         ]);
+        
+        // dd($contact);
+
+        Mail::to($contact->email)->send(new ContactMail($contact));
 
         // return redirect()->route('contact');
-        return back()->with('success' , 'Merci de nous avoir contacté, Nous vous prendrons en charge sous peu de temps !!!');
+        return back()->with('success' , 'Merci de nous avoir contactés ! Nous vous prendrons en charge rapidement. !!!');
     }
 
 
@@ -74,7 +80,7 @@ class HomeController extends Controller
             'compagnie' => 'required',
         ]);
 
-        demande::create([
+        $demande = demande::create([
             'name'  => $request->name,
             'contact'  => $request->contact,
             'email'  => $request->email,
@@ -84,6 +90,7 @@ class HomeController extends Controller
             'message'  => $request->message,
         ]);
 
+        Mail::to($demande->email)->send(new ContactMail($demande));
         // return redirect()->route('contact');
         return back()->with('success' , 'Merci votre demande a été envoyé avec succès !!!');
 

@@ -71,6 +71,7 @@ class AdminController extends Controller
         $projet->lien = route('projet.show', ['id' => $projet->id]);
         $projet->save();
 
+        
 
         return redirect()->route('liste-projet')->with('success' , 'Projet enregistré avec succès !!!');;
         // return back()->with('success' , 'Projet enregistré avec succès !!!');
