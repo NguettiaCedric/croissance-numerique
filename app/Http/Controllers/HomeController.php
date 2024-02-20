@@ -6,15 +6,28 @@ use App\Http\Controllers\Controller;
 use App\Models\contact;
 use App\Models\demande;
 use App\Models\demo;
+use App\Models\projet;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     //  
     public function index()
-    {
-        return view('welcome');
+    {   
+        $projets = projet::where('status', 1)->get();
+        return view('welcome' , [
+            'projets' => $projets,
+        ]);
     }
+
+   /*  public function projet()
+    {   
+        $projets = projet::all();
+        // $projets = Projet::orderBy('created_at', 'desc')->get();
+        return view('welcome' , [
+            'projets' => $projets,
+        ]);
+    } */
     
 
     public function contact()

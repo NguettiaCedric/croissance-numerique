@@ -52,8 +52,15 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Liste projet</h3>
+              {{-- <h3 class="card-title">Liste projet</h3> --}} <a href="{{route('ajout-projet')}}" class="btn btn-primary">Créer un projet</a>
             </div>
+
+            @if (session()->has('success'))
+                <div class="alert-success mb-4 p-1">
+                    <h5 class="text-center">{{ session()->get('success') }}</h5>
+                </div>
+            @endif
+        
             <!-- /.card-header -->
             <div class="card-body">
               <table id="example1" class="table table-bordered table-striped">
@@ -75,7 +82,10 @@
                           class="img-circle elevation-2" alt="User Image">
                       </td>
                       <td>{{$projet->title}}</td>
-                      <td> {{$projet->description}}</td>
+                      {{-- <td> {{$projet->description}}</td> --}}
+                      {{-- <td>{{ str_limit($projet->description, 20) }}</td> --}}
+                      <td>{{ Str::limit($projet->description, 35) }}</td>
+
                       <td>
                           @if ($projet->status != 0)                            
                             <a href="{{url('/desactiver-projet/'.$projet->id)}}" class="btn btn-success">Désactiver</a>

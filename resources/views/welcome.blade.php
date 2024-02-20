@@ -295,33 +295,33 @@
 
                 <div class="row portfolio-container">
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    @foreach ($projets as $projet)
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                            <img src="/storage/projet_image/{{$projet->image}}" class="img-fluid" alt="">
                             <div class="portfolio-info">
-                                <h4>Installation SAP Business one</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit!</p>
+                                <h4>{{$projet->title}}</h4>
+                                <p>{{ Str::limit($projet->description, 35) }}</p>
                                 <div class="portfolio-links">
 
-                                    <a href="#">
+                                    <a href="{{$projet->lien}}">
                                         <i class="bi bi-plus"></i>
                                     </a>
                                     {{-- <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> --}}
-
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @endforeach
+                    
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    {{-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
                             <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Tracabilite RSM</h4>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, eius!</p>
-                                <div class="portfolio-links">
-                                    {{-- <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> --}}
+                                <div class="portfolio-links">                                    
                                     <a href="#">
                                         <i class="bi bi-plus"></i>
                                     </a>
@@ -337,9 +337,7 @@
                             <div class="portfolio-info">
                                 <h4>SAP RSM</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, iusto.</p>
-                                <div class="portfolio-links">
-                                    {{-- <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> --}}
+                                <div class="portfolio-links">                                    
                                     <a href="#">
                                         <i class="bi bi-plus"></i>
                                     </a>
@@ -372,8 +370,6 @@
                                 <h4>Tracabilite RSM</h4>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, incidunt.</p>
                                 <div class="portfolio-links">
-                                    {{-- <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> --}}
                                     <a href="#">
                                         <i class="bi bi-plus"></i>
                                     </a>
@@ -390,16 +386,13 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quidem? Aperiam,
                                     nostrum. Perferendis, quidem aperiam.</p>
                                 <div class="portfolio-links">
-                                    {{-- <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a> --}}
                                     <a href="#">
                                         <i class="bi bi-plus"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
+                    </div> --}}
                 </div>
 
             </div>

@@ -19,6 +19,7 @@ class AdminController extends Controller
     public function projet()
     {   
         $projets = projet::all();
+        // $projets = Projet::orderBy('created_at', 'desc')->get();
         return view('admin.projets.index' , [
             'projets' => $projets,
         ]);
@@ -56,26 +57,34 @@ class AdminController extends Controller
             $fileNameToStore = 'noimage.jpg';
         }
 
-
-
-        // projet::create([
-        //     'title'  => $request->title,
-        //     'description'  => $request->description,
-        //     'status'  => 1,
-        //     'image'  => $fileNameToStore,
-        // ]);
-
         $projet = new projet();
         $projet->title = $request->input('title');
         $projet->description = $request->input('description');
         $projet->image = $fileNameToStore;
         $projet->status = 1;
-
+        
+        $projet->save();
+        
+        
+        
+        // Mettez à jour le lien avec l'ID du projet
+        $projet->lien = route('projet.show', ['id' => $projet->id]);
         $projet->save();
 
-        // return redirect()->route('contact');
-        return back()->with('success' , 'Projet enregistré avec succès !!!');
 
+        return redirect()->route('liste-projet')->with('success' , 'Projet enregistré avec succès !!!');;
+        // return back()->with('success' , 'Projet enregistré avec succès !!!');
+
+    }
+
+
+    public function show_projet($id)
+    {
+        // Récupérer le projet en fonction de l'ID
+        $projet = Projet::findOrFail($id);
+
+        // Passer le projet à la vue
+        return view('admin.projets.show', ['projet' => $projet]);
     }
 
 
@@ -107,15 +116,14 @@ class AdminController extends Controller
 
         $projet = Projet::find($id);
 
-        dd($projet);
+        // dd($projet);
 
         $projet = projet::find($request->input('id'));
-        dd($projet);
+        // dd($projet);
 
 
         $projet->title = $request->input('title');
         $projet->description = $request->input('description');
-
 
 
         if ($request->hasFile('image')) {
