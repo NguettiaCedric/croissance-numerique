@@ -10,7 +10,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
-    <link class="rounded-circle" href="{{asset("assets/img/fav.png")}}" rel="icon">
+    <link class="rounded-circle" href="{{asset("assets/img/faviconV2.png")}}" rel="icon">
     <link rel="stylesheet" href="{{asset('plugins/fontawesome-free/css/all.min.css')}}">
     <!-- Ionicons -->
     <link rel="stylesheet" href="{{asset('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')}}">
@@ -48,7 +48,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="{{route('dashboard')}}" class="nav-link">Accueil</a>
                 </li>
                 {{-- <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
