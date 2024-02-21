@@ -80,15 +80,15 @@
             </div>
         </div>
     </section>
-    <section id="about-sap" class="about-sap" style="background-color: #3b76ba;">
+    <section id="about-sap" class="about-sap" style="background-color: #f5f5f5;">
         <div class="container" data-aos="fade-up">
             <div class="row no-gutters">
                 <div class="col-lg-6 video-box">
-                    <h3 class="text-uppercase" style="color:white;">Propulsez votre entreprise avec SAP Business One !</h3>
+                    <h3 class="text-uppercase">Propulsez votre entreprise avec SAP Business One !</h3>
                 </div>
 
                 <div class="col-lg-6">
-                    <p class="text-justify" style="color:white;">
+                    <p class="text-justify">
                         Découvrez la puissance de SAP Business One, la solution intégrée qui simplifie chaque aspect de vos
                         opérations commerciales. Avec des outils d'analyse avancés et une personnalisation flexible,
                         libérez-vous des tâches administratives et concentrez-vous sur l'innovation. Demandez une démo dès
@@ -99,4 +99,5 @@
             </div>
         </div>
     </section>
+    
 @endsection

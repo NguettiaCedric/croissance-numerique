@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="col-lg-6 video-box">
-                    <img src="{{ asset('assets/img/rsm-2.png') }}" class="img-fluid rounded" alt="">
+                    <img src="{{ asset('assets/img/rsm-2.png') }}" class="img-fluid rounded" style="width: 80%;" alt="">
                     <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
                         data-autoplay="true"></a>
                 </div>
@@ -74,15 +74,16 @@
         <div class="container" data-aos="fade-up">
             <div class="row no-gutters">
                 <div class="col-lg-6 video-box">
-                    <h3 class="text-uppercase" style="color:white;">Propulsez votre entreprise avec SAP Business One !</h3>
+                    <h3 class="text-uppercase" style="color:white;">Propulsez votre entreprise avec SAP RSM !</h3>
                 </div>
 
                 <div class="col-lg-6">
                     <p class="text-justify" style="color:white;">
-                        Découvrez la puissance de SAP Business One, la solution intégrée qui simplifie chaque aspect de vos
-                        opérations commerciales. Avec des outils d'analyse avancés et une personnalisation flexible,
-                        libérez-vous des tâches administratives et concentrez-vous sur l'innovation. Demandez une démo dès
-                        aujourd'hui et propulsez votre entreprise vers de nouveaux sommets.
+                        Découvrez la puissance de SAP RSM, la solution intégrée conçue pour révolutionner la gestion
+                        agricole. Avec des fonctionnalités avancées de suivi des cultures, de traçabilité des produits et de
+                        gestion des stocks, libérez-vous des tâches administratives et concentrez-vous sur l'essentiel :
+                        cultiver votre réussite. Contactez-nous dès aujourd'hui pour une démonstration personnalisée et
+                        propulsez votre exploitation agricole vers de nouveaux sommets de productivité et de durabilité.
                     </p>
                     <a href="/demande-demo" class="btn btn-primary">Demandez une démo</a>
                 </div>
