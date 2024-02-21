@@ -96,4 +96,15 @@ class HomeController extends Controller
 
     }
 
+    public function show_projet($slug)
+    {
+        // Récupérer le projet en fonction de l'ID
+        // $projet = Projet::findOrFail($id);
+        $projet = Projet::where('slug', $slug)->firstOrFail();
+
+        // dd($projet);
+        // Passer le projet à la vue
+        return view('show-projet', ['projet' => $projet]);
+    }
+
 }

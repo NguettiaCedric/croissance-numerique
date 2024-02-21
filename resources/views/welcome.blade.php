@@ -1,7 +1,7 @@
 @extends('layouts')
 
 @section('title')
-    Home
+    Dashboard
 @endsection
 
 @section('content')
@@ -35,8 +35,8 @@
                                     aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
                                     mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
                                     vel. Minus et tempore modi architecto.</p>
-                                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
-                                    More</a>
+                                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">
+                                    En savoir plus</a>
                             </div>
                         </div>
                     </div>
@@ -152,7 +152,10 @@
                         <div class="icon"><i class="bi bi-globe"></i></div>
                         <h4 class="title"><a href="{{route('developpement')}}">Développement d'appliation</a></h4>
                         <p class="description">Nous mettons notre expertise à votre service pour vous guider tout au long du développement d'applications, 
-                            afin d'optimiser vos processus... <br> <br> </p>
+                            afin d'optimiser vos processus... 
+                            
+                            
+                            <br> <br> </p>
                         {{-- <button type="button" class="btn" style="background: #ffdd15">En savoir plus</button> --}}
                         <a href="{{ route('developpement') }}" class="btn btn-warning">En savoir plus</a>
 
@@ -567,19 +570,28 @@
         <section class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
-                        <h3 class="mb-3">Nos partenaires et clients</h3>
-                    </div>
-                    <div class="col-6 text-right">
-                        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button"
-                            data-slide="prev">
-                            <i class="fa fa-arrow-left"></i>
-                        </a>
-                        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button"
-                            data-slide="next">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
+
+                        <div class="col-6 mb-4">
+                            <h3 class="mb-3" style="
+                            font-size: 32px;
+                            font-weight: 600;
+                            margin-bottom: 20px;
+                            padding-bottom: 0;
+                            color: #5c768d;
+                        ">Nos partenaires et clients</h3>
+                        </div>
+                        <div class="col-6 text-right">
+                            <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button"
+                                data-slide="prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button"
+                                data-slide="next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    
+
                     <div class="col-12">
                         <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
 

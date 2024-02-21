@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\contact;
+use App\Models\demande;
 use App\Models\projet;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -12,8 +14,23 @@ class AdminController extends Controller
     //
 
     public function dashboard()
-    {
-        return view('admin.dashboard');
+    {   
+
+        // $contacts = contact::latest()->first();
+        $contacts = contact::latest()->get(); 
+        $countContatct = count($contacts);
+        // dd($countContatct);
+
+        $demandeDemos = demande::latest()->get(); 
+        $countDemande = count($demandeDemos);
+        // dd($demandeDemo);
+
+        return view('admin.dashboard', [
+            'contacts' => $contacts,
+            'countContatct' => $countContatct,
+            'demandeDemos' => $demandeDemos,
+            'countDemande' => $countDemande,
+        ]);
     }
 
     public function projet()
@@ -68,7 +85,7 @@ class AdminController extends Controller
         
         
         // Mettez à jour le lien avec l'ID du projet
-        $projet->lien = route('projet.show', ['id' => $projet->id]);
+        $projet->lien = route('projet.show', ['slug' => $projet->slug]);
         $projet->save();
 
         
@@ -79,14 +96,14 @@ class AdminController extends Controller
     }
 
 
-    public function show_projet($id)
+    /* public function show_projet($id)
     {
         // Récupérer le projet en fonction de l'ID
         $projet = Projet::findOrFail($id);
 
         // Passer le projet à la vue
         return view('admin.projets.show', ['projet' => $projet]);
-    }
+    } */
 
 
     public function edit_projet($id)
@@ -232,5 +249,16 @@ class AdminController extends Controller
 
         return back()->with('status', 'Le projet a été supprimé avec succès !!!');
     }
+
+
+    /* public function liste_contact() 
+    {
+        // $contacts = contact::all();
+        $contacts = contact::latest()->first();
+        dd($contacts);
+        return view('admin.dashboard', [
+            'contact' => $contacts,
+        ]);
+    } */
 
 }
