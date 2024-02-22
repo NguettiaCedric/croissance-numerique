@@ -104,7 +104,7 @@
                                 rentabilité.
                             </p>
 
-                            <a href="{{ route('a-propos') }}" class="btn btn-warning mt-3">En savoir plus</a>
+                            <a href="{{ route('a-propos') }}" class="btn btn mt-3" style="background-color: #ffdd15;">En savoir plus</a>
                         </div>
 
                         {{-- <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
@@ -151,7 +151,7 @@
                              ces éléments pour améliorer l'efficacité opérationnelle, optimiser les processus et favoriser une meilleure prise de décision.  --}}
                         </p>
                         {{-- <button type="button" class="btn" style="background: #ffdd15">En savoir plus</button> --}}
-                        <a href="{{ route('integration') }}" class="btn btn-warning">En savoir plus</a>
+                        <a href="{{ route('integration') }}" class="btn btn" style="background-color: #ffdd15;">En savoir plus</a>
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon"><i class="bi bi-cloud-minus-fill"></i></div>
@@ -159,7 +159,7 @@
                         <p class="description">Nous vous accompagnons à travers la transition vers des solutions numériques
                             afin d'améliorer vos processus, vos services ou votre présence en ligne.</p> <br>
                         {{-- <button type="button" class="btn" style="background: #ffdd15">En savoir plus</button> --}}
-                        <a href="{{ route('accompagnement') }}" class="btn btn-warning">En savoir plus</a>
+                        <a href="{{ route('accompagnement') }}" class="btn btn" style="background-color: #ffdd15;">En savoir plus</a>
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon"><i class="bi bi-globe"></i></div>
@@ -172,7 +172,7 @@
                             <br> <br>
                         </p>
                         {{-- <button type="button" class="btn" style="background: #ffdd15">En savoir plus</button> --}}
-                        <a href="{{ route('developpement') }}" class="btn btn-warning">En savoir plus</a>
+                        <a href="{{ route('developpement') }}" class="btn" style="background-color: #ffdd15;">En savoir plus</a>
 
                     </div>
                 </div>
@@ -198,7 +198,7 @@
                         </p>
                         {{-- <a href="{{route('sap')}}" class="btn btn-warning py-2">Découvrez la solution</a> --}}
                         <div class="col-lg-12 order-lg-1 d-none d-lg-block mt-5">
-                            <a href="{{route('sap')}}" class="btn btn-warning py-2">Découvrez la solution</a>
+                            <a href="{{route('sap')}}" class="btn py-2" style="background-color: #ffdd15;">Découvrez la solution</a>
                         </div>
 
                     </div>
@@ -208,7 +208,7 @@
                     </div>
 
                     <div class="col-lg-12 order-lg-1 text-center d-block d-lg-none">
-                        <a href="{{route('sap')}}" class="btn btn-warning py-2">Découvrez la solution</a>
+                        <a href="{{route('sap')}}" class="btn py-2" style="background-color: #ffdd15;">Découvrez la solution</a>
                     </div>
 
                 </div>
@@ -253,7 +253,7 @@
                         </p>
 
                         <div class="col-lg-12 order-lg-1 d-none d-lg-block mt-5">
-                            <a href="{{route('rsm')}}" class="btn btn-warning py-2">Découvrez la solution</a>
+                            <a href="{{route('rsm')}}" class="btn py-2" style="background-color: #ffdd15;">Découvrez la solution</a>
                         </div>
 
                     </div>
@@ -262,7 +262,7 @@
                     </div>
                     <!-- Balise <a> ajoutée ici pour apparaître après la div de l'image sur les écrans mobiles -->
                     <div class="col-lg-12 order-lg-1 text-center d-block d-lg-none">
-                        <a href="{{route('rsm')}}" class="btn btn-warning py-2">Découvrez la solution</a>
+                        <a href="{{route('rsm')}}" class="btn py-2" style="background-color: #ffdd15;">Découvrez la solution</a>
                     </div>
                 </div>
                 
@@ -364,7 +364,7 @@
                 <div class="row">
 
                     <div class="col-6 mb-4">
-                        <h3 class="mb-3"
+                        <h3 class="
                             style="
                             font-size: 32px;
                             font-weight: 600;
@@ -375,11 +375,11 @@
                             Nos partenaires et clients</h3>
                     </div>
                     <div class="col-6 text-right">
-                        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button"
+                        <a class="btn btn-primary mr-1" href="#carouselExampleIndicators2" role="button"
                             data-slide="prev">
                             <i class="fa fa-arrow-left"></i>
                         </a>
-                        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button"
+                        <a class="btn btn-primary " href="#carouselExampleIndicators2" role="button"
                             data-slide="next">
                             <i class="fa fa-arrow-right"></i>
                         </a>
@@ -393,20 +393,20 @@
                                 <div class="carousel-item active">
                                     <div class="row">
 
-                                        <div class="col-md-4 mb-3">
+                                        <div class="col-md-4 col-xs-12">
                                             <div>
                                                 <img class="img-fluid" alt="100%x280"
                                                     src="{{ asset('assets/img/partner/partner.png') }}">
 
                                             </div>
                                         </div>
-                                        <div class="col-md-4 mb-3">
+                                        <div class="col-md-4 col-xs-12">
                                             <div>
                                                 <img class="img-fluid" alt="100%x280"
                                                     src="{{ asset('assets/img/partner/partner1.png') }}">
                                             </div>
                                         </div>
-                                        <div class="col-md-4 mb-3">
+                                        <div class="col-md-4 col-xs-12">
                                             <div>
                                                 <img class="img-fluid" alt="100%x280"
                                                     src="{{ asset('assets/img/partner/partner2.png') }}">
@@ -418,19 +418,19 @@
                                 <div class="carousel-item">
                                     <div class="row">
 
-                                        <div class="col-md-4 mb-3">
+                                        <div class="col-md-4 col-xs-12">
                                             <div>
                                                 <img class="img-fluid" alt="100%x280"
                                                     src="{{ asset('assets/img/partner/partner3.png') }}">
                                             </div>
                                         </div>
-                                        <div class="col-md-4 mb-3">
+                                        <div class="col-md-4 col-xs-12 mb-3">
                                             <div>
                                                 <img class="img-fluid" alt="100%x280"
-                                                    src="{{ asset('assets/img/partner/partner5.jpg') }}">
+                                                    src="{{ asset('assets/img/partner/partner5.png') }}">
                                             </div>
                                         </div>
-                                        <div class="col-md-4 mb-3">
+                                        <div class="col-md-4 col-xs-12 mb-3">
                                             <div>
                                                 <img class="img-fluid" alt="100%x280"
                                                     src="{{ asset('assets/img/partner/partner6.png') }}">
@@ -442,26 +442,26 @@
                                 <div class="carousel-item">
                                     <div class="row">
 
-                                        <div class="col-md-3 mb-3">
+                                        <div class="col-md-3 col-xs-12 col-sm-12">
                                             <div>
                                                 <img class="img-fluid" alt="100%x280"
                                                     src="{{ asset('assets/img/partner/partner7.png') }}">
 
                                             </div>
                                         </div>
-                                        <div class="col-md-3 mb-3">
+                                        <div class="col-md-3 col-xs-12 col-sm-12">
                                             <div>
                                                 <img class="img-fluid" alt="100%x280"
                                                     src="{{ asset('assets/img/partner/partner8.png') }}">
                                             </div>
                                         </div>
-                                        <div class="col-md-3 mb-3">
+                                        <div class="col-md-3 col-xs-12 col-sm-12">
                                             <div>
                                                 <img class="img-fluid" alt="100%x280"
                                                     src="{{ asset('assets/img/partner/partner9.png') }}">
                                             </div>
                                         </div>
-                                        <div class="col-md-3 mb-3">
+                                        <div class="col-md-3 col-xs-12 col-sm-12">
                                             <div>
                                                 <img class="img-fluid" alt="100%x280"
                                                     src="{{ asset('assets/img/partner/partner10.png') }}">
