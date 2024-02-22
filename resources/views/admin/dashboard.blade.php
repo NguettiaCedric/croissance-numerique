@@ -99,7 +99,8 @@
                               <tbody>
                                 @foreach ($contacts as $contact)
                                     <tr>
-                                        <td>{{$loop->iteration }}</td>
+                                        {{-- <td>{{$loop->iteration }}</td> --}}
+                                        <td>{{ $loop->count - $loop->iteration + 1 }}</td>
                                         <td>{{$contact->name}}</td>                                      
                                         <td>{{$contact->contact}}</td>                                      
                                         <td>{{$contact->email}}</td>                                              
