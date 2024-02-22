@@ -104,8 +104,8 @@
                                 rentabilité.
                             </p>
 
+                            <a href="{{ route('a-propos') }}" class="btn btn-warning mt-3">En savoir plus</a>
                         </div>
-                        <a href="{{ route('a-propos') }}" class="btn btn-warning">En savoir plus</a>
 
                         {{-- <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bx-fingerprint"></i></div>
@@ -196,16 +196,24 @@
                             entreprises de rationaliser leurs processus métier, d'améliorer leur visibilité sur les
                             opérations et de prendre des décisions stratégiques basées sur des données en temps réel.
                         </p>
+                        {{-- <a href="{{route('sap')}}" class="btn btn-warning py-2">Découvrez la solution</a> --}}
+                        <div class="col-lg-12 order-lg-1 d-none d-lg-block mt-5">
                             <a href="{{route('sap')}}" class="btn btn-warning py-2">Découvrez la solution</a>
+                        </div>
+
                     </div>
 
-                    <div class="col-lg-6 faq-item" data-aos="fade-up">
-                        <img src="{{asset('assets/img/sap-1.jpg')}}" class="img-fluid rounded-sm" alt="">
+                    <div class="col-lg-6 faq-item order-lg-1" data-aos="fade-up">
+                        <img src="{{asset('assets/img/sap-busines.png')}}" class="img-fluid rounded-sm" alt="">
                     </div>
+
+                    <div class="col-lg-12 order-lg-1 text-center d-block d-lg-none">
+                        <a href="{{route('sap')}}" class="btn btn-warning py-2">Découvrez la solution</a>
+                    </div>
+
                 </div>
 
-                <div class="row py-3 d-flex align-items-stretch">
-
+                {{-- <div class="row py-3 d-flex align-items-stretch">
                     <div class="col-lg-6 faq-item" data-aos="fade-up">
                         <img src="{{asset('assets/img/rsm-phone.png')}}" style="width: 50%" class="img-fluid" alt="">
                     </div>
@@ -217,8 +225,47 @@
                         </p>
                         <a href="{{route('rsm')}}" class="btn btn-warning py-2">Découvrez la solution</a>
                     </div>
-                </div>
+                </div> --}}
 
+
+
+                {{-- <div class="row py-3 d-flex align-items-stretch">
+                    <div class="col-lg-6 faq-item order-lg-2" data-aos="fade-up">
+                        <h2 class="pt-4">Qu'est-ce que SAP RSM (Resource sourcing management) ? </h2>
+                        <p class="text-justify">
+                            Gagnez en contrôle sur votre entreprise ou filiale avec SAP Business One. Ce logiciel de gestion
+                            pour petites entreprises relie et rationalise vos processus, et s'adapte à votre croissance.
+                        </p>
+                        <a href="{{route('rsm')}}" class="btn btn-warning py-2">Découvrez la solution</a>
+                    </div>
+                    <div class="col-lg-6 faq-item order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                        <img src="{{asset('assets/img/rsm-phone.png')}}" style="width: 50%" class="img-fluid" alt="">
+                    </div>
+                </div> --}}
+
+
+                <div class="row py-3 d-flex align-items-stretch">
+                    <div class="col-lg-6 faq-item order-lg-2" data-aos="fade-up">
+                        <h2 class="pt-4">Qu'est-ce que SAP RSM (Resource sourcing management) ? </h2>
+                        <p class="text-justify">
+                            Gagnez en contrôle sur votre entreprise ou filiale avec SAP Business One. Ce logiciel de gestion
+                            pour petites entreprises relie et rationalise vos processus, et s'adapte à votre croissance.
+                        </p>
+
+                        <div class="col-lg-12 order-lg-1 d-none d-lg-block mt-5">
+                            <a href="{{route('rsm')}}" class="btn btn-warning py-2">Découvrez la solution</a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 faq-item order-lg-1 imgcenter" data-aos="fade-up" data-aos-delay="100">
+                        <img src="{{asset('assets/img/rsm-phone.png')}}" style="width: 50%" class="img-fluid" alt="">
+                    </div>
+                    <!-- Balise <a> ajoutée ici pour apparaître après la div de l'image sur les écrans mobiles -->
+                    <div class="col-lg-12 order-lg-1 text-center d-block d-lg-none">
+                        <a href="{{route('rsm')}}" class="btn btn-warning py-2">Découvrez la solution</a>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
@@ -428,6 +475,7 @@
                 </div>
             </div>
         </section>
+        
 
 
         {{-- Fin --}}

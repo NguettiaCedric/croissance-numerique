@@ -18,4 +18,31 @@ color: #ffffff; /* Change the text color on hover if needed */
 
 /*  */
 
+/* Taille de police par défaut */
+/* .custom-email {
+    font-size: 10px; 
+} */
+
+/* Media query pour ajuster la taille de la police sur vue mobile */
+/* Ajustez la taille de la police pour la vue mobile */
+@media (max-width: 767px) {
+    .custom-email {
+        font-size: 12px; 
+    }
+}
+
+@media (max-width: 767px) {
+    .custom-contact {
+        font-size: 12px; 
+    }
+}
+
+@media (max-width: 767px) {
+    .imgcenter {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+}
+
 

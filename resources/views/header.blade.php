@@ -3,9 +3,9 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope-fill"></i><a href="mailto:contact@croissancenumerique.ci">
-          contact@croissancenumerique.ci
+         <span class="custom-email">contact@croissancenumerique.ci</span> 
         </a>
-        <i class="bi bi-phone-fill phone-icon"></i>  +225 07 07 540 555
+        <i class="bi bi-phone-fill phone-icon"></i> <span class="custom-contact">+225 07 07 540 555</span> 
       </div>
       <div class="social-links d-none d-md-block">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
