@@ -10,7 +10,7 @@
             height: 42px;
         " src="{{asset('assets/logo/logo.png')}}" alt="logo"> --}}
             <p>
-              RIVIERA2 , ATTOBAN, CITE ATTOBAN 1,<br> Villa 370 D<br>
+              ATTOBAN, 30ème Arrondissement<br>
               <strong>Téléphone:</strong> +225 07 07 540 555<br>
               <strong>Email:</strong> contact@croissancenumerique.ci<br>
             </p>

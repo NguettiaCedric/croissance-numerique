@@ -27,15 +27,11 @@
   <link href="{{asset("assets/vendor/bootstrap-icons/bootstrap-icons.css")}}" rel="stylesheet">
   <link href="{{asset("assets/vendor/boxicons/css/boxicons.min.css")}}" rel="stylesheet">
   <link href="{{asset("assets/vendor/glightbox/css/glightbox.min.css")}}" rel="stylesheet">
-
-
-
   <link href="{{asset("assets/vendor/swiper/swiper-bundle.min.css")}}" rel="stylesheet">
+
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
 
   
-  
-
   <!-- Template Main CSS File -->
   <link href="{{asset("assets/css/style.css")}}" rel="stylesheet">
   <link href="{{asset("assets/css/custome.css")}}" rel="stylesheet">
@@ -90,6 +86,9 @@
   <script src="{{asset("assets/vendor/isotope-layout/isotope.pkgd.min.js")}}"></script>
   <script src="{{asset("assets/vendor/swiper/swiper-bundle.min.js")}}"></script>
   <script src="{{asset("assets/vendor/php-email-form/validate.js")}}"></script>
+  
+  <!-- Template Main JS File -->
+  <script src="{{asset("assets/js/main.js")}}"></script>
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -98,14 +97,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 
-
-
-
-
-
-
-  <!-- Template Main JS File -->
-  <script src="{{asset("assets/js/main.js")}}"></script>
 
 </body>
 
