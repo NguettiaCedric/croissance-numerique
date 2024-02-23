@@ -7,7 +7,7 @@
 @section('content')
 
 
-<section id="hero">
+<section id="hero" style="height: 400px;">
     <div class="hero-container">
         <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
@@ -200,7 +200,7 @@
         </div>
     </section>
     <!-- Contact -->
-    <section id="contact" class="contact mt-0">
+    <div id="contact" class="contact mt-0">
         <div class="container aos-init aos-animate" data-aos="fade-up">
             <div class="row">
 
@@ -218,8 +218,7 @@
                         <div class="info-box">
                             <i class="bx bx-map"></i>
                             <h4>Notre adresse</h4>
-                            <p>ATTOBAN
-                                ,CITE ATTOBAN 1, Villa 370 D
+                            <p>ATTOBAN, 30ème Arrondissement
                             </p>
                         </div>
                     </div>
@@ -244,7 +243,7 @@
             </div>
 
         </div>
-    </section>
+    </div>
     <!-- End contact -->
 
     
