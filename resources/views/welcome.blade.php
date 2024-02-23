@@ -20,7 +20,7 @@
                         <div class="carousel-container">
                             <div class="carousel-content container">
                                 <h2 class="animate__animated animate__fadeInDown">SAP Business One</h2>
-                                <p class="animate__animated animate__fadeInUp">La société de services spécialisée dans
+                                <p class="animate__animated animate__fadeInUp text-justify">La société de services spécialisée dans
                                     l’accompagnement des entreprises dans leur transformation digitale.</p>
                                 <a href="{{ url('/a-propos') }}"
                                     class="btn-get-started animate__animated animate__fadeInUp scrollto">En savoir plus</a>
@@ -33,7 +33,7 @@
                         <div class="carousel-container">
                             <div class="carousel-content container">
                                 <h2 class="animate__animated animate__fadeInDown">Intégration SAP RSM</h2>
-                                <p class="animate__animated animate__fadeInUp">Notre solution offre une suite d'outils
+                                <p class="animate__animated animate__fadeInUp text-justify">Notre solution offre une suite d'outils
                                     intégrés pour
                                     simplifier et optimiser la gestion des cultures, la traçabilité des produits, la
                                     planification des cultures et la gestion des stocks. Cette solution contribue à
@@ -51,7 +51,7 @@
                         <div class="carousel-container">
                             <div class="carousel-content container">
                                 <h2 class="animate__animated animate__fadeInDown">Développement mobile</h2>
-                                <p class="animate__animated animate__fadeInUp">
+                                <p class="animate__animated animate__fadeInUp text-justify">
                                     Nous donnons vie à votre vision en créant une application web ou mobile, propulsant
                                     ainsi votre entreprise dans l'arène concurrentielle. Avec notre expertise, transformons
                                     votre idée en une réalité numérique innovante. Montez d'un cran dans le monde digital
@@ -182,7 +182,7 @@
         <!-- End Services Section -->
         <!-- ======= Presentation Solution ======= -->
 
-        <section id="" class="faq section-bg">
+        <section id="solutions" class="faq section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="row py-3 d-flex align-items-stretch">
                     <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
@@ -491,8 +491,8 @@
                             <div class="info-box">
                                 <i class="bx bx-map"></i>
                                 <h4>Notre adresse</h4>
-                                <p>ATTOBAN
-                                    ,CITE ATTOBAN 1, Villa 370 D
+                                <p>ATTOBAN,
+                                    30 ème arrondissement
                                 </p>
                             </div>
                         </div>

@@ -82,6 +82,10 @@ Route::get('solutions/sap-rsm', function(){
     return view('solutions.rsm');
 })->name('rsm');
 
+Route::get('solutions/switch', function(){
+    return view('solutions.switch');
+})->name('switch');
+
 Route::get('services/integration-de-solution', function(){
     return view('services.integration');
 })->name('integration');
