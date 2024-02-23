@@ -96,6 +96,15 @@ class HomeController extends Controller
 
     }
 
+    public function projet()
+    {
+        $projets = Projet::all();
+        // dd($projets);
+        return view('projet', [
+            'projets' => $projets
+        ]);
+    }
+
     public function show_projet($slug)
     {
         // Récupérer le projet en fonction de l'ID

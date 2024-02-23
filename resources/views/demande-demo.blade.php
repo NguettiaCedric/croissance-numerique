@@ -183,8 +183,8 @@
                         <div class="info-box ">
                             <i class="bx bx-phone-call"></i>
                             <h4>Contactez-nous</h4>
-                            <p>+225 07 07 540 555
-                                {{-- <br>+1 6678 254445 41 --}}
+                            <p>
+                                +225 07 07 17 04 07
                             </p>
                         </div>
                     </div>
@@ -192,7 +192,7 @@
                         <div class="info-box">
                             <i class="bx bx-map"></i>
                             <h4>Notre adresse</h4>
-                            <p>ATTOBAN, 30ème Arrondissement
+                            <p>Riviera Attoban, 30ème Arrondissement
                             </p>
                         </div>
                     </div>
@@ -202,8 +202,7 @@
                             <i class="bx bx-envelope"></i>
                             <h4>Email</h4>
                             <p>
-                                contact@croissancenumerique.ci
-                                {{-- <br>contact@example.com --}}
+                                <a href="mailto:contact@croissancenumerique.ci" class="text-black">contact@croissancenumerique.ci</a>
                             </p>
                         </div>
                     </div>

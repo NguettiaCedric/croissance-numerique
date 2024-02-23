@@ -5,13 +5,13 @@
         <i class="bi bi-envelope-fill"></i><a href="mailto:contact@croissancenumerique.ci">
          <span class="custom-email">contact@croissancenumerique.ci</span> 
         </a>
-        <i class="bi bi-phone-fill phone-icon"></i> <span class="custom-contact">+225 07 07 540 555</span> 
+        <i class="bi bi-phone-fill phone-icon"></i> <span class="custom-contact">+225 07 07 17 04 07</span> 
       </div>
       <div class="social-links d-none d-md-block">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        {{-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> --}}
+        {{-- <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> --}}
+        <a href="https://www.facebook.com/croissancenumerique?mibextid=ZbWKwL" target="blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.linkedin.com/company/croissance-num%C3%A9rique/"  target="blank" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
     </div>
   </section>
@@ -30,7 +30,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="/">Accueil</a></li>
+          <li><a class="nav-link scrollto active" href="{{route('welcome')}}">Accueil</a></li>
           <li><a class="nav-link scrollto" href="/a-propos">A propos</a></li>
           {{-- <li><a class="nav-link scrollto" href="#services">Services</a></li> --}}
 
@@ -54,7 +54,7 @@
             </ul>
           </li>
 
-          <li><a class="nav-link scrollto" href="#portfolio">Projets</a></li>
+          <li><a class="nav-link scrollto" href="{{route('projet.index')}}">Projets réalisés</a></li>
           <li><a class="nav-link scrollto" href="https://blog.croissancenumerique.ci">Blog</a></li>
           {{-- <li><a class="nav-link scrollto" href="#team">Team</a></li> --}}
 

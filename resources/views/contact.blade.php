@@ -33,25 +33,9 @@
 </section>
 
 
-
-
-
 <div class="container">
-    <!-- About Content -->
-    {{-- <div class="about-main">
-        <div class="row">
-            <div class="col-lg-6">
-                <img class="img-fluid rounded mb-4" src="images/about-img.jpg" alt="" />
-            </div>
-            <div class="col-lg-6">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate!</p>
-            </div>
-        </div>
-        <!-- /.row -->
-    </div> --}}
 
-
-    <section id="contact" class="contact">
+    <section id="" class="contact">
         <div class="container aos-init aos-animate" data-aos="fade-up">
   
            {{--  <div class="section-title">
@@ -209,7 +193,8 @@
                         <div class="info-box ">
                             <i class="bx bx-phone-call"></i>
                             <h4>Contactez-nous</h4>
-                            <p>+225 07 07 540 555
+                            <p>
+                                +225 07 07 17 04 07
                                 {{-- <br>+1 6678 254445 41 --}}
                             </p>
                         </div>
@@ -218,7 +203,7 @@
                         <div class="info-box">
                             <i class="bx bx-map"></i>
                             <h4>Notre adresse</h4>
-                            <p>ATTOBAN, 30ème Arrondissement
+                            <p>Riviera Attoban, 30ème Arrondissement
                             </p>
                         </div>
                     </div>
@@ -228,8 +213,7 @@
                             <i class="bx bx-envelope"></i>
                             <h4>Email</h4>
                             <p>
-                                contact@croissancenumerique.ci
-                                {{-- <br>contact@example.com --}}
+                                <a href="mailto:contact@croissancenumerique.ci" class="text-black">contact@croissancenumerique.ci</a>
                             </p>
                         </div>
                     </div>

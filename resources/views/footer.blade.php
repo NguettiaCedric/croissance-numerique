@@ -10,9 +10,11 @@
             height: 42px;
         " src="{{asset('assets/logo/logo.png')}}" alt="logo"> --}}
             <p>
-              ATTOBAN, 30ème Arrondissement<br>
-              <strong>Téléphone:</strong> +225 07 07 540 555<br>
-              <strong>Email:</strong> contact@croissancenumerique.ci<br>
+              Riviera Attoban, 30ème Arrondissement<br>
+              <strong>Téléphone:</strong>+225 07 07 17 04 07<br>
+              <strong>Email:</strong> <a href="mailto:contact@croissancenumerique.ci">
+              <span class="custom-email text-white">contact@croissancenumerique.ci</span> 
+             </a><br>
             </p>
             <div class="social-links mt-3">
               {{-- <a href="#" class="twitter"><i class="fas fa-x-twitter"></i></a> --}}

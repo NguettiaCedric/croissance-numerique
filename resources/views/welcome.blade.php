@@ -92,15 +92,12 @@
 
                         <div class="section-title">
                             <h2>A propos</h2>
-                            <p>
-                                Créée en 2016 par Monsieur LOUIS DIAKITE (Président du Groupe ALINK) dans le but de
-                                proposer, d’assister
-                                et d’intégrer des solutions applicatives adaptées aux besoins réels des clients, Croissance
-                                Numerique est une
-                                société de services spécialisée dans l’accompagnement des entreprises dans leur
-                                transformation digitale. Nous aidons les petites et moyennes entreprises
-                                à simplifier leurs processus opérationnels clés pour maximiser leur efficacité et leur
-                                rentabilité.
+                            <p> 
+                                Croissance Numerique est une société ivoirienne d’experts, spécialisée dans la transformation digitale du secteur agricole.
+                                Avec 7 ans d’expérience, Croissance Numerique se positionne comme l'accélérateur de la transition digitale du secteur agricole en Afrique francophone.
+                                Grâce à notre maîtrise de solutions de pointe comme les ERP SAP, les plateformes de paiement mobile ou les solutions de traçabilités SAP RSM, 
+                                nous boostons la performance et la rentabilité de nos clients sur le long terme.
+
                             </p>
 
                             <a href="{{ route('a-propos') }}" class="btn btn mt-3" style="background-color: #ffdd15;">En savoir plus</a>
@@ -126,7 +123,8 @@
                 </div>
 
             </div>
-        </section><!-- End About Us Section -->
+        </section>
+        <!-- End About Us Section -->
 
 
 
@@ -165,7 +163,7 @@
                         <h4 class="title"><a href="{{ route('developpement') }}">Développement d'appliation</a></h4>
                         <p class="description">Nous mettons notre expertise à votre service pour vous guider tout au long du
                             développement d'applications,
-                            afin d'optimiser vos processus...
+                            afin d'optimiser vos processus.
 
 
                             <br> <br>

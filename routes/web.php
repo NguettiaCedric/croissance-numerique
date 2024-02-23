@@ -54,6 +54,7 @@ Route::post('/store-contact', [HomeController::class, 'store_contact']);
 
 Route::get('/demande-demo', [HomeController::class, 'demandeDemo'])->name('demande-demo');
 Route::post('/store-demande-demo', [HomeController::class, 'store_demandeDemo']);
+Route::get('/projet', [HomeController::class, 'projet'])->name('projet.index');
 Route::get('/projet/{slug}', [HomeController::class, 'show_projet'])->name('projet.show');
 
 
