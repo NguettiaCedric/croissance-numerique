@@ -215,7 +215,7 @@
                         <img src="{{asset('assets/img/rsm-phone.png')}}" style="width: 50%" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
-                        <h2 class="pt-4">Qu'est-ce que SAP RSM (Resource sourcing management) ? </h2>
+                        <h2 class="pt-4">Qu'est-ce que SAP RSM (Rural Sourcing Management) ? </h2>
                         <p class="text-justify">
                             Gagnez en contrôle sur votre entreprise ou filiale avec SAP Business One. Ce logiciel de gestion
                             pour petites entreprises relie et rationalise vos processus, et s'adapte à votre croissance.
@@ -228,7 +228,7 @@
 
                 {{-- <div class="row py-3 d-flex align-items-stretch">
                     <div class="col-lg-6 faq-item order-lg-2" data-aos="fade-up">
-                        <h2 class="pt-4">Qu'est-ce que SAP RSM (Resource sourcing management) ? </h2>
+                        <h2 class="pt-4">Qu'est-ce que SAP RSM (Rural Sourcing Management) ? </h2>
                         <p class="text-justify">
                             Gagnez en contrôle sur votre entreprise ou filiale avec SAP Business One. Ce logiciel de gestion
                             pour petites entreprises relie et rationalise vos processus, et s'adapte à votre croissance.
@@ -243,7 +243,7 @@
 
                 <div class="row py-3 d-flex align-items-stretch">
                     <div class="col-lg-6 faq-item order-lg-2" data-aos="fade-up">
-                        <h2 class="pt-4">Qu'est-ce que SAP RSM (Resource sourcing management) ? </h2>
+                        <h2 class="pt-4">Qu'est-ce que SAP RSM (Rural Sourcing Management) ? </h2>
                         <p class="text-justify">
                             Gagnez en contrôle sur votre entreprise ou filiale avec SAP Business One. Ce logiciel de gestion
                             pour petites entreprises relie et rationalise vos processus, et s'adapte à votre croissance.
@@ -490,16 +490,6 @@
                 <div class="row">
 
                     <div class="col">
-                        <div class="col-lg d-flex aos-init aos-animate" data-aos="fade-up">
-                            <div class="info-box">
-                                <i class="bx bx-map"></i>
-                                <h4>Notre adresse</h4>
-                                <p>ATTOBAN,
-                                    30 ème arrondissement
-                                </p>
-                            </div>
-                        </div>
-
                         <div class="col-lg d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                             <div class="info-box">
                                 <i class="bx bx-envelope"></i>
@@ -510,13 +500,23 @@
                                 </p>
                             </div>
                         </div>
-
+                       
                         <div class="col-lg d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                             <div class="info-box ">
                                 <i class="bx bx-phone-call"></i>
                                 <h4>Contactez-nous</h4>
                                 <p>+225 07 07 540 555
                                     {{-- <br>+1 6678 254445 41 --}}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg d-flex aos-init aos-animate" data-aos="fade-up">
+                            <div class="info-box">
+                                <i class="bx bx-map"></i>
+                                <h4>Notre adresse</h4>
+                                <p>ATTOBAN,
+                                    30 ème arrondissement
                                 </p>
                             </div>
                         </div>

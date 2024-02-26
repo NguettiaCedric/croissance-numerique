@@ -18,9 +18,9 @@
             </p>
             <div class="social-links mt-3">
               {{-- <a href="#" class="twitter"><i class="fas fa-x-twitter"></i></a> --}}
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
+              <a href="https://www.facebook.com/croissancenumerique?mibextid=ZbWKwL" class="facebook" style="background: #ffdd15;"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.linkedin.com/company/croissance-num%C3%A9rique/" class="linkedin" style="background: #ffdd15;"><i class="bx bxl-linkedin"></i></a>
+              {{-- <a href="#" class="youtube" style="background: #ffdd15;"><i class="bx bxl-youtube"></i></a> --}}
             </div>
           </div>
 

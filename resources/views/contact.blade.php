@@ -189,6 +189,16 @@
             <div class="row">
 
                 <div class="col">
+                    
+                    <div class="col-lg d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                        <div class="info-box">
+                            <i class="bx bx-envelope"></i>
+                            <h4>Email</h4>
+                            <p>
+                                <a href="mailto:contact@croissancenumerique.ci" class="text-black">contact@croissancenumerique.ci</a>
+                            </p>
+                        </div>
+                    </div>
                     <div class="col-lg d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                         <div class="info-box ">
                             <i class="bx bx-phone-call"></i>
@@ -204,16 +214,6 @@
                             <i class="bx bx-map"></i>
                             <h4>Notre adresse</h4>
                             <p>Riviera Attoban, 30ème Arrondissement
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                        <div class="info-box">
-                            <i class="bx bx-envelope"></i>
-                            <h4>Email</h4>
-                            <p>
-                                <a href="mailto:contact@croissancenumerique.ci" class="text-black">contact@croissancenumerique.ci</a>
                             </p>
                         </div>
                     </div>
