@@ -5,9 +5,26 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Croissance Numeique</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title> Croissance numerique - vous accompagne dans les solutions SAP Business One & SAP RSM</title>
+  <meta content="Tout savoir sur Croissance numerique une structure ultra rapide qui vous accompage à travers des solutions SAP Business One & SAP RMS" name="description">
+
+  {{-- Open graff sert a etre plus visible sur les reseaux sociaux --}}
+  <meta property="og:title" content="Croissance numerique" />
+  {{-- <meta name="facebook:card" content="sap-busines" />
+  <meta name="facebook:title" content="Croissance numerique - vous accompagne dans les solutions SAP Business One & SAP RSM"/>
+  <meta property="og:title" content="Croissance numerique - partenaire solution SAP Business One & SAP RSM"/>
+  <meta property="og:title" content="Croissance numerique" /> --}}
+
+  <meta name="facebook:card" content="sap_busines" />
+  <meta name="facebook:title" content="Croissance numerique - vous accompagne dans les solutions SAP Business One & SAP RSM"/>
+  <meta property="og:title" content="Croissance numerique - partenaire solution SAP Business One & SAP RSM"/>
+
+
+
+
+  {{-- <meta name="facebook:card" content="Croissance numerique - vous accompagne dans les solutions SAP Business One & SAP RSM" /> --}}
+  {{-- <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+  <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" /> --}}
 
   <!-- Favicons -->
   {{-- <link href="{{asset("assets/logo/logo.png")}}" style="width: 270; height:270"rel="icon"> --}}

@@ -1,7 +1,7 @@
 @extends('layouts')
 
 @section('title')
-    Dashboard
+    Croissance numerique - vous accompagne dans les solutions SAP Business One & SAP RSM
 @endsection
 
 @section('content')
@@ -201,7 +201,7 @@
                     </div>
 
                     <div class="col-lg-6 faq-item order-lg-1" data-aos="fade-up">
-                        <img src="{{asset('assets/img/sap-busines.png')}}" class="img-fluid rounded-sm" alt="">
+                        <img src="{{asset('assets/img/sap-busines.png')}}" class="img-fluid rounded-sm" alt="sap-busines">
                     </div>
 
                     <div class="col-lg-12 order-lg-1 text-center d-block d-lg-none">
@@ -255,7 +255,7 @@
 
                     </div>
                     <div class="col-lg-6 faq-item order-lg-1 imgcenter" data-aos="fade-up" data-aos-delay="100">
-                        <img src="{{asset('assets/img/rsm-phone.png')}}" style="width: 50%" class="img-fluid" alt="">
+                        <img src="{{asset('assets/img/rsm-phone.png')}}" style="width: 50%" class="img-fluid" alt="rsm-phone">
                     </div>
                     <!-- Balise <a> ajoutée ici pour apparaître après la div de l'image sur les écrans mobiles -->
                     <div class="col-lg-12 order-lg-1 text-center d-block d-lg-none">
