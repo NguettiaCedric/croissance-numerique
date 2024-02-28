@@ -16,7 +16,7 @@
 
                     <!-- Slide 1 -->
                     <div class="carousel-item active"
-                        style="background-image: url('assets/img/slide/slide-1.png'); width:100%;">
+                        style="background-image: url('assets/img/slide/slide-03.png'); width:100%;">
                         <div class="carousel-container">
                             <div class="carousel-content container">
                                 <h2 class="animate__animated animate__fadeInDown">SAP Business One</h2>
@@ -29,7 +29,7 @@
                     </div>
 
                     <!-- Slide 2 -->
-                    <div class="carousel-item" style="background-image: url('assets/img/slide/slide-2.png');">
+                    <div class="carousel-item" style="background-image: url('assets/img/slide/slide-03-.png');">
                         <div class="carousel-container">
                             <div class="carousel-content container">
                                 <h2 class="animate__animated animate__fadeInDown">Intégration SAP RSM</h2>
@@ -47,7 +47,7 @@
                     </div>
 
                     <!-- Slide 3 -->
-                    <div class="carousel-item" style="background-image: url('assets/img/slide/slide-5.png');">
+                    <div class="carousel-item" style="background-image: url('assets/img/slide/slide-05.png');">
                         <div class="carousel-container">
                             <div class="carousel-content container">
                                 <h2 class="animate__animated animate__fadeInDown">Développement mobile</h2>
@@ -633,6 +633,9 @@
         </section> --}}
 
 
+        <canvas width="300" height="100">
+            Désolé, votre navigateur ne prend pas en charge &lt;canvas&gt;.
+        </canvas>
 
     </main>
     <!-- End #main -->
